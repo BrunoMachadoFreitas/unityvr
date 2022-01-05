@@ -28,4 +28,9 @@ public class IntercaoPlanta : MonoBehaviour {
     {
         Debug.Log("clicou");
     }
+
+    public void OnMouseOver()
+    {
+       
+    }
 }
