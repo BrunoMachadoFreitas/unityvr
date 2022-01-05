@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class IntercaoPlanta : MonoBehaviour { 
 
     public Button btnSelecao;
+    public Text txtm;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,9 @@ public class IntercaoPlanta : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0)){
             btnSelecao.gameObject.SetActive(true);
+            txtm.gameObject.SetActive(true);
         }
+       
     }
 
     public void onClick()
