@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class mostraInfoPlanta : MonoBehaviour
 {
     public GameObject progressBar;
+    public Outline thisOutline;
     public float timeLeft;
     public float tempoInicio = 0;
     public bool podeContar = false;
@@ -28,6 +29,7 @@ public class mostraInfoPlanta : MonoBehaviour
 
     public void mostraProgressBar()
     {
+        thisOutline.enabled = true;
         progressBar.gameObject.SetActive(true);
         podeContar = true;
        
@@ -37,6 +39,7 @@ public class mostraInfoPlanta : MonoBehaviour
     {
         progressBar.gameObject.SetActive(false);
         podeContar = false;
+        thisOutline.enabled = false;
     }
 
     IEnumerator contaProgress()
