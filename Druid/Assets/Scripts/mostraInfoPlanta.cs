@@ -15,6 +15,10 @@ public class mostraInfoPlanta : MonoBehaviour
     public Text text1;
     public Text text2;
     public Canvas canvas;
+
+    public Text textProgress;
+    private int timeToInt = 0;
+    private float progress = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +28,16 @@ public class mostraInfoPlanta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timeToInt = (int)progress;
         if (podeContar && timeLeft > 0)
         {
             timeLeft -= Time.deltaTime * 5 ;
+            progress += Time.deltaTime * 5;
             imageProgressBar.fillAmount = timeLeft / tempoInicio;
+
+            textProgress.text = timeToInt.ToString() +  "%";
         }
+
         mostraText();
     }
 
