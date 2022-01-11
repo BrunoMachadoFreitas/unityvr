@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class mostraInfoPlanta : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class mostraInfoPlanta : MonoBehaviour
     public float tempoInicio = 0;
     public bool podeContar = false;
     public Image imageProgressBar;
+    public Text text1;
+    public Text text2;
+    public Canvas canvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +26,10 @@ public class mostraInfoPlanta : MonoBehaviour
     {
         if (podeContar && timeLeft > 0)
         {
-            timeLeft -= Time.deltaTime * 3 ;
+            timeLeft -= Time.deltaTime * 5 ;
             imageProgressBar.fillAmount = timeLeft / tempoInicio;
         }
+        mostraText();
     }
 
     public void mostraProgressBar()
@@ -32,22 +37,27 @@ public class mostraInfoPlanta : MonoBehaviour
         thisOutline.enabled = true;
         progressBar.gameObject.SetActive(true);
         podeContar = true;
-       
+        canvas.gameObject.SetActive(true);
     }
    
     public void exitPlanta()
     {
         progressBar.gameObject.SetActive(false);
+        text1.gameObject.SetActive(false);
+        text2.gameObject.SetActive(false);
         podeContar = false;
         thisOutline.enabled = false;
+        canvas.gameObject.SetActive(false);
     }
 
-    IEnumerator contaProgress()
+   public void mostraText()
     {
-        //wait 5 seconds
-        yield return new WaitForSeconds(100);
-
-        //destroy this gameobject
-        Destroy(this.gameObject);
+        if(timeLeft <= 75)
+        {
+            text1.gameObject.SetActive(true);
+        }else if(timeLeft <= 50)
+        {
+            text2.gameObject.SetActive(true);
+        }
     }
 }
