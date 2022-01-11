@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4ee39ab291f32b42beff7a9ed1983f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 41.7
+  points: 51
   postProcessProfile: {fileID: 216914676}
 --- !u!4 &559539205
 Transform:
