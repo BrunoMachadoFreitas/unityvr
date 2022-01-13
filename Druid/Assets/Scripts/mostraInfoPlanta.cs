@@ -14,6 +14,8 @@ public class mostraInfoPlanta : MonoBehaviour
     public Image imageProgressBar;
     public Text text1;
     public Text text2;
+    public Text text3;
+    public Text text4;
     public Canvas canvas;
 
     public Text textProgress;
@@ -64,7 +66,16 @@ public class mostraInfoPlanta : MonoBehaviour
         if(timeLeft <= 75)
         {
             text1.gameObject.SetActive(true);
-        }else if(timeLeft <= 50)
+        }
+        if(timeLeft <= 50)
+        {
+            text2.gameObject.SetActive(true);
+        }
+        if (timeLeft <= 25)
+        {
+            text2.gameObject.SetActive(true);
+        }
+        if (timeLeft <= 5)
         {
             text2.gameObject.SetActive(true);
         }
