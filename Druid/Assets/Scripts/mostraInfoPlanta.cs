@@ -73,11 +73,11 @@ public class mostraInfoPlanta : MonoBehaviour
         }
         if (timeLeft <= 25)
         {
-            text2.gameObject.SetActive(true);
+            text3.gameObject.SetActive(true);
         }
         if (timeLeft <= 5)
         {
-            text2.gameObject.SetActive(true);
+            text4.gameObject.SetActive(true);
         }
     }
 }
