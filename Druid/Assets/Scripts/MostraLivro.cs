@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class MostraLivro : MonoBehaviour
 {
-    public GameObject Livro;
-    public GameObject posicaoLivro;
+    public Transform Livro;
+    public Transform posicaoLivro;
+    public GameObject LivroObj;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +21,9 @@ public class MostraLivro : MonoBehaviour
 
     public void mostraLivro()
     {
-        Livro.gameObject.SetActive(true);
+        LivroObj.gameObject.SetActive(true);
         Livro.transform.position = posicaoLivro.transform.position;
 
-        Livro.transform.rotation = posicaoLivro.transform.rotation;
+        Livro.parent = posicaoLivro.parent;
     }
 }

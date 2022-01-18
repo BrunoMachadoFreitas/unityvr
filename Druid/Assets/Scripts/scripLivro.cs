@@ -19,6 +19,12 @@ public class scripLivro : MonoBehaviour
         Livro.GetComponent<Animator>().Play("animaLivro");
        
     }
+    public void desapareceLivro()
+    {
+        livro.gameObject.SetActive(false);
+    }
+
+   
 
   
 }
