@@ -21,6 +21,7 @@ public class mostraInfoPlanta : MonoBehaviour
     public Text textProgress;
     private int timeToInt = 0;
     private float progress = 0;
+    public bool podeTirar = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -78,6 +79,7 @@ public class mostraInfoPlanta : MonoBehaviour
         if (timeLeft <= 5)
         {
             text4.gameObject.SetActive(true);
+            podeTirar = true;
         }
     }
 }

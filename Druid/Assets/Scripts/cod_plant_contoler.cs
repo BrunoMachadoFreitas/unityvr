@@ -24,22 +24,29 @@ public class cod_plant_contoler : MonoBehaviour
     public PlantsName plantName;
     public Texture[] textures;
     Renderer m_Renderer;
+
     // Start is called before the first frame update
 
     public void RemovePlant()
     {
-        if(plantType == PlantType.good)
+        if (this.gameObject.GetComponent<mostraInfoPlanta>().podeTirar)
         {
-            GetComponentInChildren<TrailRenderer>().startColor = Color.red;
-        }
-       
-
-        LeanTween.rotateY(this.gameObject, 300*5, 1).setOnComplete(()=> {
-            LeanTween.moveY(this.gameObject, 10, 2).setEaseInBounce().setOnComplete(() =>
+            if (plantType == PlantType.good)
             {
-                this.gameObject.SetActive(false);
+                GetComponentInChildren<TrailRenderer>().startColor = Color.red;
+
+            }
+
+
+
+            LeanTween.rotateY(this.gameObject, 300 * 5, 1).setOnComplete(() =>
+            {
+                LeanTween.moveY(this.gameObject, 10, 2).setEaseInBounce().setOnComplete(() =>
+                {
+                    this.gameObject.SetActive(false);
+                });
             });
-        });
+        }
        
     }
 
