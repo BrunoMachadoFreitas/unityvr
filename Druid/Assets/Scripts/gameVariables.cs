@@ -27,7 +27,7 @@ public class gameVariables : MonoBehaviour
 
     private void Update()
     {
-        //points += 1;
+        
         _ColorGrading.saturation.value = points*2 - 100;
     }
 }
