@@ -23,6 +23,8 @@ public class cod_plant_contoler : MonoBehaviour
     private PlantType plantType;
     public PlantsName plantName;
     public Texture[] textures;
+    public AudioClip[] audioClips;
+    public AudioSource audioSource;
     Renderer m_Renderer;
 
     // Start is called before the first frame update
@@ -34,7 +36,12 @@ public class cod_plant_contoler : MonoBehaviour
             if (plantType == PlantType.good)
             {
                 GetComponentInChildren<TrailRenderer>().startColor = Color.red;
-
+            audioSource.PlayOneShot(audioClips[1]);
+        }
+            else
+            {
+            audioSource.PlayOneShot(audioClips[0]);
+          
             }
 
 
@@ -62,7 +69,7 @@ public class cod_plant_contoler : MonoBehaviour
             case PlantsName.Noveleiro:
                 plantType = PlantType.good;
                 m_Renderer.material.SetTexture("_MainTex", textures[0]);
-   
+                //Aqui vai a transformação so scale
                 break;
             case PlantsName.Pinheiro_Bravo:
                 plantType = PlantType.good;
