@@ -21,7 +21,7 @@ public class cod_teleporta : MonoBehaviour
 
     public void movimentaTeleport()
     {
-        livro.gameObject.SetActive(false);
+        //livro.gameObject.SetActive(false);
         LeanTween.move(player, new Vector3 (transform.position.x, transform.position.y + 3.5f, transform.position.z) , 3).setEase(LeanTweenType.easeInOutSine);
 
     }
