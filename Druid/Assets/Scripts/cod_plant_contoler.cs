@@ -32,8 +32,7 @@ public class cod_plant_contoler : MonoBehaviour
 
     public void RemovePlant()
     {
-        if (this.gameObject.GetComponent<mostraInfoPlanta>().podeTirar)
-        {
+     
             if (plantType == PlantType.good)
             {
                 GetComponentInChildren<TrailRenderer>().startColor = Color.red;
@@ -54,7 +53,7 @@ public class cod_plant_contoler : MonoBehaviour
                     this.gameObject.SetActive(false);
                 });
             });
-        }
+        
        
     }
 
