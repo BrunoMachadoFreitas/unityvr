@@ -26,6 +26,7 @@ public class cod_plant_contoler : MonoBehaviour
     public AudioClip[] audioClips;
     public AudioSource audioSource;
     Renderer m_Renderer;
+    public GameObject placeholder;
 
     // Start is called before the first frame update
 
@@ -57,7 +58,7 @@ public class cod_plant_contoler : MonoBehaviour
        
     }
 
-    void Start()
+    void Awake()
     {
 
         m_Renderer = GetComponent<Renderer>();
@@ -85,6 +86,8 @@ public class cod_plant_contoler : MonoBehaviour
                 this.gameObject.transform.localPosition += Vector3.up * 1.5f;
                 this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
                 
+                placeholder.GetComponentInChildren<Light>().spotAngle = 125;
+                placeholder.GetComponentInChildren<Light>().intensity = 15;
                 break;
             case PlantsName.Cronalheira:
                 plantType = PlantType.good;
