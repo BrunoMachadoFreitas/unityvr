@@ -27,23 +27,37 @@ public class cod_plant_contoler : MonoBehaviour
     public AudioSource audioSource;
     Renderer m_Renderer;
     public GameObject placeholder;
+    public Transform aguentadorPlantas;
+    public float x, y, z;
+    public GameObject variavelPostProcess;
+    public GameObject passaros;
+    public int nmrPlantas = 0;
+
+    public int progresso = 0;
 
     // Start is called before the first frame update
 
     public void RemovePlant()
     {
-     
+        if (this.gameObject.GetComponent<mostraInfoPlanta>().podeTirar)
+        {
             if (plantType == PlantType.good)
             {
                 GetComponentInChildren<TrailRenderer>().startColor = Color.red;
-            audioSource.PlayOneShot(audioClips[1]);
-        }
+                audioSource.PlayOneShot(audioClips[1]);
+               
+            }
             else
             {
-            audioSource.PlayOneShot(audioClips[0]);
-          
+                audioSource.PlayOneShot(audioClips[0]);
+                variavelPostProcess.GetComponent<gameVariables>().Points += progresso;
+                
             }
 
+            if(progresso == (100/nmrPlantas))
+            {
+                passaros.gameObject.SetActive(true);
+            }
 
 
             LeanTween.rotateY(this.gameObject, 300 * 5, 1).setOnComplete(() =>
@@ -53,7 +67,11 @@ public class cod_plant_contoler : MonoBehaviour
                     this.gameObject.SetActive(false);
                 });
             });
-        
+
+        }
+    }
+    private void Update()
+    {
        
     }
 
@@ -61,8 +79,9 @@ public class cod_plant_contoler : MonoBehaviour
     {
 
         m_Renderer = GetComponent<Renderer>();
+        progresso = (100 / nmrPlantas);
 
-       
+
 
         switch (plantName)
         {
@@ -80,11 +99,14 @@ public class cod_plant_contoler : MonoBehaviour
             case PlantsName.Pinheiro_Bravo:
                 plantType = PlantType.good;
                 m_Renderer.material.SetTexture("_MainTex", textures[1]);
-
+              
                 this.gameObject.transform.localScale *= 3;
-                this.gameObject.transform.localPosition += Vector3.up * 1.5f;
-                this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
-                
+                //this.transform.SetParent(aguentadorPlantas);
+                this.gameObject.transform.position += new Vector3(-0.0002f, 0.0039f, 0.0416f);
+             
+               // this.gameObject.transform.localPosition = new Vector3(0,GetComponent<MeshFilter>().mesh.bounds.extents.y,0);
+
+
                 placeholder.GetComponentInChildren<Light>().spotAngle = 125;
                 placeholder.GetComponentInChildren<Light>().intensity = 15;
                 break;
