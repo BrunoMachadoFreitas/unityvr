@@ -626,7 +626,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &446664182
 RectTransform:
   m_ObjectHideFlags: 0
@@ -874,7 +874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &718865351
 RectTransform:
   m_ObjectHideFlags: 0
@@ -951,7 +951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &767400046
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1464,7 +1464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1473417899
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1566,7 +1566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1626259960
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2022,7 +2022,6 @@ GameObject:
   - component: {fileID: 1512496602589811955}
   - component: {fileID: 2271991995136106469}
   - component: {fileID: 7323226057816997191}
-  - component: {fileID: 1832222550}
   - component: {fileID: 1174304997}
   m_Layer: 0
   m_Name: placHolder
@@ -6792,49 +6791,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &1832222550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2284725161927826137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 854680627}
-          m_MethodName: mostraProgressBar
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 854680627}
-          m_MethodName: exitPlanta
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &1174304997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6983,7 +6939,6 @@ GameObject:
   - component: {fileID: 2284725163212050617}
   - component: {fileID: 1469397330}
   - component: {fileID: 1469397331}
-  - component: {fileID: 854680627}
   - component: {fileID: 1654433468}
   - component: {fileID: 2005414189}
   m_Layer: 0
@@ -7001,7 +6956,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2284725163212050619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.36, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.0019276, y: 2, z: 2}
   m_Children:
   - {fileID: 369882548}
@@ -7107,7 +7062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d8e2ce269617e43a326984bcc20690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantName: 1
+  plantName: 5
   textures:
   - {fileID: 2800000, guid: 34df8d458c8bad64a91aa6076b8f0eb8, type: 3}
   - {fileID: 2800000, guid: ccca6330b27417b44b42646f5afbe16e, type: 3}
@@ -7120,31 +7075,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: addd209f3d21e5442b0efe3344e95815, type: 3}
   audioSource: {fileID: 1654433468}
   placeholder: {fileID: 2284725161927826137}
---- !u!114 &854680627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2284725163212050619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 403b1bf925e4feb4a9e44e744ac248f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressBar: {fileID: 542671075}
-  thisOutline: {fileID: 1512496602589811955}
-  timeLeft: 100
-  tempoInicio: 0
-  podeContar: 0
-  imageProgressBar: {fileID: 317832115}
-  text1: {fileID: 1760152511}
-  text2: {fileID: 1114657815}
-  text3: {fileID: 1282691244}
-  text4: {fileID: 26681793}
-  canvas: {fileID: 1111538102}
-  textProgress: {fileID: 358918393}
-  podeTirar: 0
+  aguentadorPlantas: {fileID: 6543252661118461985}
+  x: 1.14
+  y: 2.8
+  z: 0
+  variavelPostProcess: {fileID: 0}
+  passaros: {fileID: 0}
+  nmrPlantas: 6
+  animal2: {fileID: 0}
+  progresso: 0
 --- !u!82 &1654433468
 AudioSource:
   m_ObjectHideFlags: 0
