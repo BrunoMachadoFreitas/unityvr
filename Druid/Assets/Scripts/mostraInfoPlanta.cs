@@ -22,6 +22,7 @@ public class mostraInfoPlanta : MonoBehaviour
     private int timeToInt = 0;
     private float progress = 0;
     public bool podeTirar = false;
+    public Transform player;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class mostraInfoPlanta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //this.gameObject.transform.LookAt(player);
         timeToInt = (int)progress;
         if (podeContar && timeLeft > 0)
         {

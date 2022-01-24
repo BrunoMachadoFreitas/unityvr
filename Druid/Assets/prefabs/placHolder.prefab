@@ -7084,6 +7084,7 @@ MonoBehaviour:
   nmrPlantas: 6
   animal2: {fileID: 0}
   progresso: 0
+  incrementaProgresso: 0
 --- !u!82 &1654433468
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7205,6 +7206,7 @@ MonoBehaviour:
   canvas: {fileID: 1473417902}
   textProgress: {fileID: 652312622}
   podeTirar: 0
+  player: {fileID: 0}
 --- !u!1001 &2284725162563715899
 PrefabInstance:
   m_ObjectHideFlags: 0
