@@ -33,9 +33,10 @@ public class cod_plant_contoler : MonoBehaviour
     public GameObject passaros;
     public int nmrPlantas = 0;
     public GameObject animal2;
-
+    public GameObject animal3;
+    public GameObject animal4;
     public int progresso = 0;
-    public int incrementaProgresso = 0;
+   
 
     // Start is called before the first frame update
 
@@ -47,21 +48,29 @@ public class cod_plant_contoler : MonoBehaviour
             {
                 GetComponentInChildren<TrailRenderer>().startColor = Color.red;
                 audioSource.PlayOneShot(audioClips[1]);
-                incrementaProgresso--;
+                variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso--;
                 variavelPostProcess.GetComponent<gameVariables>().Points -= progresso;
             }
             else
             {
                 audioSource.PlayOneShot(audioClips[0]);
                 variavelPostProcess.GetComponent<gameVariables>().Points += progresso;
-                incrementaProgresso++;
+                variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso++;
             }
 
-            if(incrementaProgresso == 1)
+            if(variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso == 1)
             {
                 passaros.gameObject.SetActive(true);
             } 
-            if(incrementaProgresso == 2)
+            if(variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso == 2)
+            {
+                animal2.gameObject.SetActive(true);
+            }
+            if (variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso == 3)
+            {
+                animal3.gameObject.SetActive(true);
+            }
+            if (variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso == 4)
             {
                 animal2.gameObject.SetActive(true);
             }

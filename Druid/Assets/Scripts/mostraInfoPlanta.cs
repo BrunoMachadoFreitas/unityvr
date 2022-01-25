@@ -36,8 +36,8 @@ public class mostraInfoPlanta : MonoBehaviour
         timeToInt = (int)progress;
         if (podeContar && timeLeft > 0)
         {
-            timeLeft -= Time.deltaTime * 5 ;
-            progress += Time.deltaTime * 5;
+            timeLeft -= Time.deltaTime * 20 ;
+            progress += Time.deltaTime * 20;
             imageProgressBar.fillAmount = timeLeft / tempoInicio;
 
             textProgress.text = timeToInt.ToString() +  "%";

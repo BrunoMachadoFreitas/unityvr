@@ -11,7 +11,7 @@ public class gameVariables : MonoBehaviour
 
     public PostProcessVolume postProcessProfile;
     private ColorGrading _ColorGrading;
-
+    public int incrementaProgresso = 0;
 
 
     public float Points   // property
@@ -30,4 +30,11 @@ public class gameVariables : MonoBehaviour
         
         _ColorGrading.saturation.value = points*2 - 100;
     }
+
+    public int progresso
+    {
+        get { return incrementaProgresso; }
+        
+    }
+
 }
