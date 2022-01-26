@@ -36,6 +36,7 @@ public class cod_plant_contoler : MonoBehaviour
     public GameObject animal3;
     public GameObject animal4;
     public int progresso = 0;
+    public bool tirouPlanta = false;
    
 
     // Start is called before the first frame update
@@ -50,9 +51,11 @@ public class cod_plant_contoler : MonoBehaviour
                 audioSource.PlayOneShot(audioClips[1]);
                 variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso--;
                 variavelPostProcess.GetComponent<gameVariables>().Points -= progresso;
+                tirouPlanta = true;
             }
             else
             {
+                tirouPlanta = true;
                 audioSource.PlayOneShot(audioClips[0]);
                 variavelPostProcess.GetComponent<gameVariables>().Points += progresso;
                 variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso++;
@@ -112,6 +115,8 @@ public class cod_plant_contoler : MonoBehaviour
                 this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
 
                 break;
+
+
             case PlantsName.Pinheiro_Bravo:
                 plantType = PlantType.good;
                 m_Renderer.material.SetTexture("_MainTex", textures[1]);

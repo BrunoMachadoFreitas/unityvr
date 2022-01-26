@@ -306,6 +306,7 @@ MonoBehaviour:
   animal3: {fileID: 0}
   animal4: {fileID: 0}
   progresso: 0
+  tirouPlanta: 0
 --- !u!82 &3113331501990110143
 AudioSource:
   m_ObjectHideFlags: 0
@@ -415,7 +416,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progressBar: {fileID: 0}
-  thisOutline: {fileID: 0}
+  thisOutline: {fileID: 6467129422396015604, guid: 1db856449e0c50f468625958f92a3606,
+    type: 3}
   timeLeft: 100
   tempoInicio: 0
   podeContar: 0
@@ -427,4 +429,4 @@ MonoBehaviour:
   canvas: {fileID: 0}
   textProgress: {fileID: 0}
   podeTirar: 0
-  player: {fileID: 0}
+  player: {fileID: 2363847546904658418, guid: 18e2107cccb5b844ebe8e130976d38cc, type: 3}
