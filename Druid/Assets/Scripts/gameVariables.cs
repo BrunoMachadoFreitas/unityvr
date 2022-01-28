@@ -11,16 +11,18 @@ public class gameVariables : MonoBehaviour
 
     public PostProcessVolume postProcessProfile;
     private ColorGrading _ColorGrading;
+    private gameProgressControl gameProgressControl;
     public int incrementaProgresso = 0;
 
 
     public float Points   // property
     {
         get { return points; }   // get method
-        set { _ColorGrading.saturation.value = value * 2 - 100; ; points = value; }  // set method
+        set { _ColorGrading.saturation.value = value * 2 - 100; gameProgressControl.MyOwnProgress = value; points = value; }  // set method
     }
     private void Start()
     {
+        gameProgressControl = GetComponentInParent<gameProgressControl>();
         postProcessProfile.profile.TryGetSettings(out _ColorGrading);
     }
 
