@@ -25,7 +25,7 @@ public class escolhePlanta : MonoBehaviour
         Instantiate(aguentador, primeiroAguentador.transform.position, Quaternion.identity);
        
         aguentador.GetComponentInChildren<cod_plant_contoler>().plantName = PlantsName.Noveleiro;
-       // primeiroAguentador.gameObject.SetActive(false);
+        primeiroAguentador.gameObject.SetActive(false);
 
 
         vasos.gameObject.SetActive(false);
