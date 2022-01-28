@@ -4039,6 +4039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 287750687}
+  growPart: {fileID: 2043121532}
   space_around: 1
 --- !u!4 &1252568240
 Transform:
@@ -9765,6 +9766,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 163824, guid: 3534d34ed60de86488d565def6a29c1b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 415396, guid: 3534d34ed60de86488d565def6a29c1b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9823,6 +9828,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11488312, guid: 3534d34ed60de86488d565def6a29c1b, type: 3}
       propertyPath: Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19869158, guid: 3534d34ed60de86488d565def6a29c1b, type: 3}
+      propertyPath: UVModule.flipU
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1073742029504906, guid: 3534d34ed60de86488d565def6a29c1b, type: 3}
@@ -11235,6 +11244,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463285ecd6702471a909ba810832bf0e, type: 3}
+--- !u!1 &2043121532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 165774, guid: 3534d34ed60de86488d565def6a29c1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1599409311}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2065633749
 GameObject:
   m_ObjectHideFlags: 0

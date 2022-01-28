@@ -6,12 +6,14 @@ public class cod_move_around_Player : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject player;
+    public GameObject growPart;
 
 
-    public int space_around = 5;
+    public float space_around = 1.5f;
     void Start()
     {
         spinAround();
+        Piscar();
     }
 
     // Update is called once per frame
@@ -22,16 +24,25 @@ public class cod_move_around_Player : MonoBehaviour
 
     void spinAround()
     {
-        LTSpline ltSpline = new LTSpline(
+        
+    LTSpline ltSpline = new LTSpline(
             new Vector3[] {
-                 player.transform.position-(player.transform.up*-1)  + (Vector3.forward*(Random.Range(-space_around,space_around))),
-                 player.transform.position-(player.transform.up*-1) + (Vector3.back*(Random.Range(-space_around,space_around))),
-                 player.transform.position-(player.transform.up*-1) + (Vector3.right*(Random.Range(-space_around,space_around))),
-                 player.transform.position-(player.transform.up*-1) + (Vector3.left*(Random.Range(-space_around,space_around))),
-                 player.transform.position-(player.transform.up*-1) + (Vector3.right*(Random.Range(-space_around,space_around))),
-                 player.transform.position-(player.transform.up*-1) + (Vector3.forward*(Random.Range(-space_around,space_around))),
-                 }) ;
+                new Vector3(player.transform.position.x, 2, player.transform.position.y) + player.transform.up * space_around,
+                new Vector3(player.transform.position.x, 2, player.transform.position.y) + player.transform.forward * space_around,
+                new Vector3(player.transform.position.x, 2, player.transform.position.y) + player.transform.up,
+                new Vector3(player.transform.position.x, 2, player.transform.position.y) + player.transform.right * space_around,
+                new Vector3(player.transform.position.x, 2, player.transform.position.y) + player.transform.forward * space_around,
+                new Vector3(player.transform.position.x, 2, player.transform.position.y) + (-player.transform.right) * space_around,
+                new Vector3(player.transform.position.x, 2, player.transform.position.y) + player.transform.forward * space_around,
+                new Vector3(player.transform.position.x, 3.5f, player.transform.position.y) + player.transform.forward * space_around,
+    }); ;
 
-        LeanTween.moveSpline(this.gameObject, ltSpline, 10.0f).setOrientToPath(true).setEase(LeanTweenType.easeInOutQuad).setOnComplete(()=> { spinAround(); }); ;
+        LeanTween.moveSpline(this.gameObject, ltSpline, 10.0f).setOrientToPath(true).setEase(LeanTweenType.easeInOutQuad);//.setOnComplete(()=> { spinAround(); }); ;
     }
+
+    void Piscar()
+    {
+        LeanTween.scale(growPart, growPart.transform.localScale * 20, 1f).setOnComplete(() => { LeanTween.scale(growPart, growPart.transform.localScale / 20, 1f).setOnComplete(()=>Piscar()); });
+    }
+   
 }
