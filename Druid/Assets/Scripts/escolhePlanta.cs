@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class escolhePlanta : MonoBehaviour
 {
-    public GameObject placaPrefab;
-    public Transform placeholder;
+   
+    public GameObject primeiroAguentador;
     public GameObject aguentador;
     public GameObject vasos;
     // Start is called before the first frame update
@@ -22,10 +22,12 @@ public class escolhePlanta : MonoBehaviour
 
     public void metePlanta()
     {
-        Instantiate(placaPrefab, placeholder.position, Quaternion.identity);
-        placaPrefab.gameObject.transform.parent = placeholder;
-        aguentador.gameObject.GetComponent<BoxCollider>().enabled = true;
-        placaPrefab.gameObject.GetComponent<cod_plant_contoler>().plantName = PlantsName.Noveleiro;
+        Instantiate(aguentador, primeiroAguentador.transform.position, Quaternion.identity);
+       
+        aguentador.GetComponentInChildren<cod_plant_contoler>().plantName = PlantsName.Noveleiro;
+       // primeiroAguentador.gameObject.SetActive(false);
+
+
         vasos.gameObject.SetActive(false);
     }
 }
