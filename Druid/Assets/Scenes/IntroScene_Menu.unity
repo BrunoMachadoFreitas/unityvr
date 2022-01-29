@@ -1154,7 +1154,7 @@ PrefabInstance:
     - target: {fileID: 5340148302855632259, guid: 3adaaa4f6a18c6a4cad207ed78455735,
         type: 3}
       propertyPath: scene
-      value: Moises
+      value: base_run
       objectReference: {fileID: 0}
     - target: {fileID: 5340148302855632259, guid: 3adaaa4f6a18c6a4cad207ed78455735,
         type: 3}
@@ -8911,6 +8911,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2121696496}
+    - target: {fileID: 3800725681158968365, guid: 1db80b0b4e991d4488a6216225ec72b9,
+        type: 3}
+      propertyPath: scene
+      value: base_run
+      objectReference: {fileID: 0}
     - target: {fileID: 8688158030290015424, guid: 1db80b0b4e991d4488a6216225ec72b9,
         type: 3}
       propertyPath: m_LocalPosition.x
