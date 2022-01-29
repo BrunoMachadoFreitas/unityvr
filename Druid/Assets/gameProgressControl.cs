@@ -19,6 +19,8 @@ public class gameProgressControl : MonoBehaviour
     public AudioClip[] audioClips;
     public FasesDoJogo faseActual = FasesDoJogo.Inicio;
 
+    public Cod_FinalScene cod_FinalScene;
+
     private float myOwnProgress; //same as progess but doesnt go back
     public float MyOwnProgress  // property
     {
@@ -33,7 +35,8 @@ public class gameProgressControl : MonoBehaviour
                     case FasesDoJogo.Inicio:
                         break;
                     case FasesDoJogo.instrucao:
-                        audioSources.PlayOneShot(audioClips[0]);
+                        audioSources.PlayOneShot(audioClips[1]);
+                        cod_FinalScene.AppearOneByOne();
                         break;
                     case FasesDoJogo.tirar:
                         audioSources.PlayOneShot(audioClips[1]);
@@ -46,6 +49,7 @@ public class gameProgressControl : MonoBehaviour
                         break;
                     case FasesDoJogo.fim:
                         audioSources.PlayOneShot(audioClips[4]);
+                        cod_FinalScene.AppearOneByOne();
                         break;
                     default:
                         break;
