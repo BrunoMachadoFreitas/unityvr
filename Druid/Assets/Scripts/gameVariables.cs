@@ -18,7 +18,14 @@ public class gameVariables : MonoBehaviour
     public float Points   // property
     {
         get { return points; }   // get method
-        set { _ColorGrading.saturation.value = value * 2 - 100; gameProgressControl.MyOwnProgress = value; points = value; }  // set method
+        set
+        {
+            if (value > 0) { _ColorGrading.saturation.value = value * 2 - 100; gameProgressControl.MyOwnProgress = value; points = value; }
+            else
+            {
+                value = -100;
+            }  // set method
+        }
     }
     private void Start()
     {
