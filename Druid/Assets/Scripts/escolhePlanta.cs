@@ -8,6 +8,7 @@ public class escolhePlanta : MonoBehaviour
     public GameObject primeiroAguentador;
     public GameObject aguentador;
     public GameObject vasos;
+    public PlantsName plantaEscolhida;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,7 @@ public class escolhePlanta : MonoBehaviour
     {
         Instantiate(aguentador, primeiroAguentador.transform.position, Quaternion.identity);
        
-        aguentador.GetComponentInChildren<cod_plant_contoler>().plantName = PlantsName.Noveleiro;
+        aguentador.GetComponentInChildren<cod_plant_contoler>().plantName = plantaEscolhida;
         primeiroAguentador.gameObject.SetActive(false);
 
 

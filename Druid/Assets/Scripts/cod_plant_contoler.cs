@@ -120,12 +120,13 @@ public class cod_plant_contoler : MonoBehaviour
             case PlantsName.Pinheiro_Bravo:
                 plantType = PlantType.good;
                 m_Renderer.material.SetTexture("_MainTex", textures[1]);
-              
-                this.gameObject.transform.localScale *= 3;
+
+                // this.gameObject.transform.localScale *= 3;
                 //this.transform.SetParent(aguentadorPlantas);
-                this.gameObject.transform.position += new Vector3(-0.0002f, 0.0039f, 0.0416f);
-             
-               // this.gameObject.transform.localPosition = new Vector3(0,GetComponent<MeshFilter>().mesh.bounds.extents.y,0);
+                this.gameObject.transform.localPosition += Vector3.up;
+                this.gameObject.transform.localPosition += Vector3.forward;
+
+                // this.gameObject.transform.localPosition = new Vector3(0,GetComponent<MeshFilter>().mesh.bounds.extents.y,0);
 
 
                 placeholder.GetComponentInChildren<Light>().spotAngle = 125;
@@ -135,34 +136,34 @@ public class cod_plant_contoler : MonoBehaviour
                 plantType = PlantType.good;
                 m_Renderer.material.SetTexture("_MainTex", textures[2]);
 
-                this.gameObject.transform.localScale *= 3;
-                this.gameObject.transform.localPosition += Vector3.up * 1.5f;
-                this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
+               // this.gameObject.transform.localScale *= 3;
+                this.gameObject.transform.localPosition += Vector3.up;
+                this.gameObject.transform.localPosition += Vector3.forward;
 
                 break;
             case PlantsName.Hortência:
                 plantType = PlantType.bad;
                 m_Renderer.material.SetTexture("_MainTex", textures[3]);
 
-                this.gameObject.transform.localScale *= 3;
-                this.gameObject.transform.localPosition += Vector3.up * 1.5f;
-                this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
+                //this.gameObject.transform.localScale *= 3;
+                this.gameObject.transform.localPosition += Vector3.up;
+                this.gameObject.transform.localPosition += Vector3.forward;
                 break;
             case PlantsName.Àrove_do_incenso:
                 m_Renderer.material.SetTexture("_MainTex", textures[4]);
                 plantType = PlantType.bad;
 
-                this.gameObject.transform.localScale *= 3;
-                this.gameObject.transform.localPosition += Vector3.up * 1.5f;
-                this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
+                //this.gameObject.transform.localScale *= 3;
+                this.gameObject.transform.localPosition += Vector3.up;
+                this.gameObject.transform.localPosition += Vector3.forward;
                 break;
             case PlantsName.Acácia:
                 m_Renderer.material.SetTexture("_MainTex", textures[5]);
                 plantType = PlantType.bad;
 
-                                this.gameObject.transform.localScale *= 3;
-                this.gameObject.transform.localPosition += Vector3.up * 1.5f;
-                this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
+                               // this.gameObject.transform.localScale *= 3;
+                this.gameObject.transform.localPosition += Vector3.up;
+                this.gameObject.transform.localPosition += Vector3.forward ;
                 break;
 
             default:
