@@ -25,7 +25,7 @@ public class Cod_FinalScene : MonoBehaviour
     {
         foreach (GameObject item in teleports)
         {
-            LeanTween.moveLocalY(item, -2.57f, 1).setDelay(teleports.IndexOf(item));
+            LeanTween.moveLocalY(item, 0.5f, 1).setDelay(teleports.IndexOf(item));
         }
     }
  

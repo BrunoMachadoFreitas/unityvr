@@ -33,22 +33,34 @@ public class gameProgressControl : MonoBehaviour
                 switch (faseActual)
                 {
                     case FasesDoJogo.Inicio:
+                        
                         break;
                     case FasesDoJogo.instrucao:
-                        audioSources.PlayOneShot(audioClips[1]);
-                        cod_FinalScene.AppearOneByOne();
+                        audioSources.clip = audioClips[2];
+                        audioSources.Play();
+                        //audioSources.PlayOneShot(audioClips[2]);
+                        
                         break;
                     case FasesDoJogo.tirar:
-                        audioSources.PlayOneShot(audioClips[1]);
+                        audioSources.Stop();
+                        audioSources.clip = audioClips[3];
+                        audioSources.Play();
                         break;
                     case FasesDoJogo.plantar:
-                        audioSources.PlayOneShot(audioClips[2]);
+                        audioSources.Stop();
+                        audioSources.clip = audioClips[4];
+                        audioSources.Play();
+                        cod_FinalScene.AppearOneByOne();
                         break;
                     case FasesDoJogo.meio:
-                        audioSources.PlayOneShot(audioClips[3]);
+                        audioSources.Stop();
+                        audioSources.clip = audioClips[3];
+                        audioSources.Play();
                         break;
                     case FasesDoJogo.fim:
-                        audioSources.PlayOneShot(audioClips[4]);
+                        audioSources.Stop();
+                        audioSources.clip = audioClips[4];
+                        audioSources.Play();
                         cod_FinalScene.AppearOneByOne();
                         break;
                     default:
@@ -61,8 +73,9 @@ public class gameProgressControl : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-      
+    {      
+        audioSources.clip = audioClips[1];
+        audioSources.Play();
     }
 
     // Update is called once per frame

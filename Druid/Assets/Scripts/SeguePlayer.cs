@@ -12,5 +12,6 @@ public class SeguePlayer : MonoBehaviour
     private void LateUpdate()
     {
         transform.position = target.position + offset;
+        
     }
 }
