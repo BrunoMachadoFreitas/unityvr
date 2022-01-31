@@ -20,7 +20,7 @@ public enum PlantsName
 }
 public class cod_plant_contoler : MonoBehaviour
 {
-    private PlantType plantType;
+    public PlantType plantType;
     public PlantsName plantName;
     public Texture[] textures;
     public AudioClip[] audioClips;
