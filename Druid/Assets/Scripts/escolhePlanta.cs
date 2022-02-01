@@ -32,7 +32,7 @@ public class escolhePlanta : MonoBehaviour
         placa.GetComponent<cod_plant_contoler>().plantName = plantaEscolhida;
         Instantiate(placa, primeiroAguentador.transform.position, Quaternion.identity);
         placa.gameObject.SetActive(true);
-        mostraVasos.gameObject.SetActive(false);
+        
        // primeiroAguentador.gameObject.SetActive(false);
 
 

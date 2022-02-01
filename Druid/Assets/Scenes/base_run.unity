@@ -250,6 +250,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b36b248dac73de241981c4b3ed591677, type: 3}
+--- !u!1 &45580735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 45580736}
+  - component: {fileID: 45580737}
+  m_Layer: 0
+  m_Name: cameraShake
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &45580736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45580735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 287750688}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &45580737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45580735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b9ebace922148948a2b1ad33e890c50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 98987876}
+  shakeDuration: 10
+  shakeAmount: 0.08
+  decreaseFactor: 1
 --- !u!4 &59418714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 156846097, guid: abe2efcfc56363c45a4d5c0e3b437027,
@@ -358,6 +405,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textFps: {fileID: 102411189}
+--- !u!4 &98987876 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2363847547302303398, guid: 18e2107cccb5b844ebe8e130976d38cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 2363847546650557394}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &102411187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,6 +1134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poeira: {fileID: 357983276}
+  cameraShake: {fileID: 45580735}
 --- !u!65 &123385019
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1276,7 +1330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &357983277
 Transform:
   m_ObjectHideFlags: 0
@@ -6099,6 +6153,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cenario
       objectReference: {fileID: 0}
+    - target: {fileID: 7430803004533789937, guid: 4b37a80dc12c04b56b41086660c46ff6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.899
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b37a80dc12c04b56b41086660c46ff6, type: 3}
 --- !u!1 &389580516
@@ -8481,7 +8540,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progressBar: {fileID: 793737573}
-  thisOutline: {fileID: 1260836087}
   timeLeft: 100
   tempoInicio: 0
   podeContar: 0
@@ -14949,7 +15007,7 @@ PrefabInstance:
     - target: {fileID: 6544915154902934825, guid: 4435aeea0e2ef6b4ea8023c772bffcce,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.84
+      value: -22.42
       objectReference: {fileID: 0}
     - target: {fileID: 6544915154902934825, guid: 4435aeea0e2ef6b4ea8023c772bffcce,
         type: 3}
