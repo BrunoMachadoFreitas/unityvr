@@ -1457,6 +1457,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 287750688}
+    - target: {fileID: 1512496602589811955, guid: abe2efcfc56363c45a4d5c0e3b437027,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284725161927826118, guid: abe2efcfc56363c45a4d5c0e3b437027,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1954,8 +1959,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiroAguentador: {fileID: 2060722920}
-  aguentador: {fileID: 494563235}
+  placa: {fileID: 0}
   vasos: {fileID: 1169822150}
+  plantaEscolhida: 0
+  canvasPrimeiro: {fileID: 0}
+  mostraVasos: {fileID: 0}
 --- !u!114 &248192812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2196,8 +2204,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiroAguentador: {fileID: 1219713271}
-  aguentador: {fileID: 976725623}
+  placa: {fileID: 0}
   vasos: {fileID: 2067850855}
+  plantaEscolhida: 0
+  canvasPrimeiro: {fileID: 0}
+  mostraVasos: {fileID: 0}
 --- !u!114 &294280098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2333,8 +2344,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiroAguentador: {fileID: 865781461}
-  aguentador: {fileID: 1777706721}
+  placa: {fileID: 0}
   vasos: {fileID: 852422996}
+  plantaEscolhida: 0
+  canvasPrimeiro: {fileID: 0}
+  mostraVasos: {fileID: 0}
 --- !u!114 &297807956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3175,8 +3189,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiroAguentador: {fileID: 1131069638}
-  aguentador: {fileID: 2020086068}
+  placa: {fileID: 0}
   vasos: {fileID: 558589503}
+  plantaEscolhida: 0
+  canvasPrimeiro: {fileID: 0}
+  mostraVasos: {fileID: 0}
 --- !u!114 &537546632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3424,8 +3441,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiroAguentador: {fileID: 1211276635}
-  aguentador: {fileID: 214659132}
+  placa: {fileID: 0}
   vasos: {fileID: 155902531}
+  plantaEscolhida: 0
+  canvasPrimeiro: {fileID: 0}
+  mostraVasos: {fileID: 0}
 --- !u!114 &559406965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3665,6 +3685,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 287750688}
+    - target: {fileID: 1512496602589811955, guid: abe2efcfc56363c45a4d5c0e3b437027,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284725161927826118, guid: abe2efcfc56363c45a4d5c0e3b437027,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4726,8 +4751,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiroAguentador: {fileID: 1280155205}
-  aguentador: {fileID: 239835456}
+  placa: {fileID: 0}
   vasos: {fileID: 2046414839}
+  plantaEscolhida: 0
+  canvasPrimeiro: {fileID: 0}
+  mostraVasos: {fileID: 0}
 --- !u!114 &814374408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5086,8 +5114,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiroAguentador: {fileID: 804179224}
-  aguentador: {fileID: 446542822}
+  placa: {fileID: 0}
   vasos: {fileID: 58013924}
+  plantaEscolhida: 0
+  canvasPrimeiro: {fileID: 0}
+  mostraVasos: {fileID: 0}
 --- !u!114 &883779772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5267,6 +5298,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 287750688}
+    - target: {fileID: 1512496602589811955, guid: abe2efcfc56363c45a4d5c0e3b437027,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284725161927826118, guid: abe2efcfc56363c45a4d5c0e3b437027,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5488,6 +5524,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 287750688}
+    - target: {fileID: 1512496602589811955, guid: abe2efcfc56363c45a4d5c0e3b437027,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284725161927826118, guid: abe2efcfc56363c45a4d5c0e3b437027,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6051,6 +6092,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 287750688}
+    - target: {fileID: 1512496602589811955, guid: abe2efcfc56363c45a4d5c0e3b437027,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284725161927826118, guid: abe2efcfc56363c45a4d5c0e3b437027,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7203,8 +7249,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiroAguentador: {fileID: 449504198}
-  aguentador: {fileID: 269083251}
+  placa: {fileID: 0}
   vasos: {fileID: 1938267754}
+  plantaEscolhida: 0
+  canvasPrimeiro: {fileID: 0}
+  mostraVasos: {fileID: 0}
 --- !u!114 &1259456345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12235,6 +12284,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 287750688}
+    - target: {fileID: 1512496602589811955, guid: abe2efcfc56363c45a4d5c0e3b437027,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284725161927826118, guid: abe2efcfc56363c45a4d5c0e3b437027,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13008,6 +13062,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 287750688}
+    - target: {fileID: 1512496602589811955, guid: abe2efcfc56363c45a4d5c0e3b437027,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284725161927826118, guid: abe2efcfc56363c45a4d5c0e3b437027,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13519,6 +13578,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 287750688}
+    - target: {fileID: 1512496602589811955, guid: abe2efcfc56363c45a4d5c0e3b437027,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284725161927826118, guid: abe2efcfc56363c45a4d5c0e3b437027,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13664,8 +13728,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiroAguentador: {fileID: 405733998}
-  aguentador: {fileID: 478822879}
+  placa: {fileID: 0}
   vasos: {fileID: 375781789}
+  plantaEscolhida: 0
+  canvasPrimeiro: {fileID: 0}
+  mostraVasos: {fileID: 0}
 --- !u!114 &1744685547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14075,6 +14142,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 287750688}
+    - target: {fileID: 1512496602589811955, guid: abe2efcfc56363c45a4d5c0e3b437027,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284725161927826118, guid: abe2efcfc56363c45a4d5c0e3b437027,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14452,6 +14524,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 287750688}
+    - target: {fileID: 1512496602589811955, guid: abe2efcfc56363c45a4d5c0e3b437027,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284725161927826118, guid: abe2efcfc56363c45a4d5c0e3b437027,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14787,8 +14864,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiroAguentador: {fileID: 1436826134}
-  aguentador: {fileID: 224195904}
+  placa: {fileID: 0}
   vasos: {fileID: 577868661}
+  plantaEscolhida: 0
+  canvasPrimeiro: {fileID: 0}
+  mostraVasos: {fileID: 0}
 --- !u!114 &2016107920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15320,6 +15400,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 287750688}
+    - target: {fileID: 1512496602589811955, guid: abe2efcfc56363c45a4d5c0e3b437027,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284725161927826118, guid: abe2efcfc56363c45a4d5c0e3b437027,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15465,8 +15550,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeiroAguentador: {fileID: 164024216}
-  aguentador: {fileID: 164024215}
+  placa: {fileID: 0}
   vasos: {fileID: 1546289475}
+  plantaEscolhida: 0
+  canvasPrimeiro: {fileID: 0}
+  mostraVasos: {fileID: 0}
 --- !u!114 &2143484823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15823,6 +15911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363847546899067528, guid: 18e2107cccb5b844ebe8e130976d38cc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.4
       objectReference: {fileID: 0}
     - target: {fileID: 2363847546904658381, guid: 18e2107cccb5b844ebe8e130976d38cc,
         type: 3}

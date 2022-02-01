@@ -7,7 +7,7 @@ using TMPro;
 public class mostraInfoPlanta : MonoBehaviour
 {
     public GameObject progressBar;
-    public Outline thisOutline;
+  
     public float timeLeft;
     public float tempoInicio = 0;
     public bool podeContar = false;
@@ -48,7 +48,7 @@ public class mostraInfoPlanta : MonoBehaviour
 
     public void mostraProgressBar()
     {
-        thisOutline.enabled = true;
+       
         progressBar.gameObject.SetActive(true);
         podeContar = true;
         canvas.gameObject.SetActive(true);
@@ -60,7 +60,7 @@ public class mostraInfoPlanta : MonoBehaviour
         text1.gameObject.SetActive(false);
         text2.gameObject.SetActive(false);
         podeContar = false;
-        thisOutline.enabled = false;
+       
         canvas.gameObject.SetActive(false);
     }
 
