@@ -6013,6 +6013,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013210091632, guid: 970dd4b9371394fb4890965f608d46fd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 970dd4b9371394fb4890965f608d46fd, type: 3}
 --- !u!4 &1286138170 stripped
@@ -6758,6 +6763,7 @@ GameObject:
   - component: {fileID: 1468553493}
   - component: {fileID: 1468553492}
   - component: {fileID: 1468553491}
+  - component: {fileID: 1468553496}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6922,6 +6928,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1468553496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468553489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c35ec75d9ddb2c24982a18cb533feccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowCursor: 0
+  sensivity: 1
 --- !u!4 &1485670141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8923508949716524509, guid: 22b21d6085b44de44a86d82f152b60f0,
