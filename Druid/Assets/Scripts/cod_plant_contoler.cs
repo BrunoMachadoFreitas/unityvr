@@ -88,6 +88,11 @@ public class cod_plant_contoler : MonoBehaviour
             });
 
         }
+
+        if(variavelPostProcess.GetComponent<gameVariables>().Points <= 0)
+        {
+            Debug.Log("Game over");
+        }
     }
     private void Update()
     {
