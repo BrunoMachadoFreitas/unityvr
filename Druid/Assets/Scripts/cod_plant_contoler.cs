@@ -37,7 +37,6 @@ public class cod_plant_contoler : MonoBehaviour
     public GameObject animal4;
     public int progresso = 0;
     public bool tirouPlanta = false;
-    public Canvas canvasInformacoes;
    
 
     // Start is called before the first frame update
@@ -48,22 +47,18 @@ public class cod_plant_contoler : MonoBehaviour
         {
             if (plantType == PlantType.good)
             {
-                canvasInformacoes.gameObject.SetActive(false);
                 GetComponentInChildren<TrailRenderer>().startColor = Color.red;
                 audioSource.PlayOneShot(audioClips[1]);
                 variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso--;
                 variavelPostProcess.GetComponent<gameVariables>().Points -= progresso;
-               
                 tirouPlanta = true;
             }
             else
             {
-                canvasInformacoes.gameObject.SetActive(false);
                 tirouPlanta = true;
                 audioSource.PlayOneShot(audioClips[0]);
                 variavelPostProcess.GetComponent<gameVariables>().Points += progresso;
                 variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso++;
-              
             }
 
             if(variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso == 1)

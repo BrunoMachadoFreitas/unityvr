@@ -6531,10 +6531,6 @@ PrefabInstance:
       propertyPath: plantName
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1469397331, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
-      propertyPath: canvasInformacoes
-      value: 
-      objectReference: {fileID: 609954359}
     - target: {fileID: 2005414189, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: player
       value: 
@@ -6601,12 +6597,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
---- !u!223 &609954359 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 1111538102, guid: abe2efcfc56363c45a4d5c0e3b437027,
-    type: 3}
-  m_PrefabInstance: {fileID: 609954358}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &611676223
 GameObject:
   m_ObjectHideFlags: 0
@@ -7867,10 +7857,6 @@ PrefabInstance:
       propertyPath: plantName
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1469397331, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
-      propertyPath: canvasInformacoes
-      value: 
-      objectReference: {fileID: 806774097}
     - target: {fileID: 1892440960, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -13914,10 +13900,6 @@ PrefabInstance:
       propertyPath: plantName
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1469397331, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
-      propertyPath: canvasInformacoes
-      value: 
-      objectReference: {fileID: 504121729}
     - target: {fileID: 1892440960, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_RootOrder
       value: 8
