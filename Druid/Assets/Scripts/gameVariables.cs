@@ -14,30 +14,46 @@ public class gameVariables : MonoBehaviour
     private gameProgressControl gameProgressControl;
     public int incrementaProgresso = 0;
 
+    public GameObject apresentaGameOver;
+
 
     public float Points   // property
     {
         get { return points; }   // get method
         set
         {
-            if (value > 0) { _ColorGrading.saturation.value = value * 2 - 100; gameProgressControl.MyOwnProgress = value; points = value; }
-            else
+            if (value > 0) { 
+               
+                _ColorGrading.saturation.value = value * 2 - 100;
+                
+                gameProgressControl.MyOwnProgress = value;  
+            }
+            
+
+            if (value <= 0)
             {
-                value = -100;
-            }  // set method
+                apresentaGameOver.gameObject.SetActive(true);
+                _ColorGrading.saturation.value = -100;
+            }
+            points = value;
+
+
+           
         }
     }
     private void Start()
     {
+ 
         gameProgressControl = GetComponentInParent<gameProgressControl>();
         postProcessProfile.profile.TryGetSettings(out _ColorGrading);
+        _ColorGrading.saturation.value = points * 2 - 100;
     }
 
 
     private void Update()
     {
         
-        _ColorGrading.saturation.value = points*2 - 100;
+       // 
     }
 
     public int progresso

@@ -86,13 +86,9 @@ public class cod_plant_contoler : MonoBehaviour
                     this.gameObject.SetActive(false);
                 });
             });
-
+            this.gameObject.GetComponent<BoxCollider>().enabled = false;
         }
 
-        if(variavelPostProcess.GetComponent<gameVariables>().Points <= 0)
-        {
-            Debug.Log("Game over");
-        }
     }
     private void Update()
     {
