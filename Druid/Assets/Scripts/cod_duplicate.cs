@@ -6,9 +6,10 @@ public class cod_duplicate : MonoBehaviour
 {
     // Start is called before the first frame update
    List<GameObject> tables;
-    int min = 1;
-    int max = 6;
-    int chosen = 2;
+  
+    private int min = 1;
+    public int max = 6;
+    public int chosen ;
     void Start()
     {
         tables = new List<GameObject>();
@@ -18,7 +19,8 @@ public class cod_duplicate : MonoBehaviour
         {
             tables.Add(item.gameObject);
         }
-        print(tables.Count);
+        //print(tables.Count);
+        chosen = max / 2;
 
         InvokeRepeating("duplicate", 5,10); //primeiro parametro quantos segundos até primeira vez, de quanto em quanto tempo
     }
@@ -34,21 +36,43 @@ public class cod_duplicate : MonoBehaviour
     {
 
         int saiu = Random.Range(min, max);
-        print(saiu);
+        print("SAIU? "+saiu);
+        print("chosen? " + chosen);
+
         if ( saiu == chosen)
             {
         
+      
             int chosen = Random.Range(0, tables.Count - 1);
-            print(chosen);
+            tables[chosen].GetComponentInChildren<cod_plant_contoler>().GetComponent<Renderer>().material.shader = Shader.Find("Holistic/Waves");
+    
+            // print(chosen);
             if (tables[chosen].GetComponentInChildren<cod_plant_contoler>().plantType == PlantType.bad)
                 {
-                    GameObject go = GameObject.Instantiate(tables[chosen]);
-                    go.transform.position = transform.position + transform.right * 3;
-                go.transform.SetParent(this.gameObject.transform);
+                StartCoroutine(ChnageAgain(tables[chosen]));
+
+         
                 }
             }
 
 
         
+    }
+
+
+    IEnumerator ChnageAgain(GameObject chosenTree)
+    {
+        GameObject go = GameObject.Instantiate(chosenTree);
+
+        go.transform.SetParent(this.gameObject.transform);
+        go.transform.position = transform.position + (transform.right * 1.5f);
+
+        yield return new WaitForSeconds(2);
+
+        chosenTree.GetComponentInChildren<cod_plant_contoler>().GetComponent<Renderer>().material.shader = Shader.Find("Custom/cut-Out");
+        go.GetComponentInChildren<cod_plant_contoler>().GetComponent<Renderer>().material.shader = Shader.Find("Custom/cut-Out");
+
+        //After we have waited 5 seconds print the time again.
+        yield break;
     }
 }
