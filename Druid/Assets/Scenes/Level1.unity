@@ -2922,65 +2922,95 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7050345492839171182, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.3142
+      objectReference: {fileID: 0}
     - target: {fileID: 7050345492839171183, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_text
-      value: Folha amarela
+      value: Pequena Arv
       objectReference: {fileID: 0}
     - target: {fileID: 7050345492839171183, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7050345492839171183, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7050345492839171183, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7050345492839171183, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7050345492839171183, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7050345492839171183, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 6
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345492839171183, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -147.98785
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345493234158984, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.3138
       objectReference: {fileID: 0}
     - target: {fileID: 7050345493234158985, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7050345493234158985, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7050345493234158985, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7050345493234158985, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7050345493234158985, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345493234158985, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_text
+      value: Fruto Vermelho
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345493234158985, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345493234158985, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -55.347813
       objectReference: {fileID: 0}
     - target: {fileID: 7050345493249561348, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
@@ -3077,55 +3107,100 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7050345493573855272, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345494173896084, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.3179
+      objectReference: {fileID: 0}
     - target: {fileID: 7050345494173896085, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 7050345494173896085, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7050345494173896085, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7050345494173896085, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7050345494173896085, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345494173896085, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_text
+      value: "Arbustro\tFlor so branca"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345494173896085, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345494173896085, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -116.02842
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345494270887285, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.3086
       objectReference: {fileID: 0}
     - target: {fileID: 7050345494270887286, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7050345494270887286, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7050345494270887286, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7050345494270887286, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7050345494270887286, guid: 99ee5c24042958f4c97faa25d8c30c18,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345494270887286, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_text
+      value: "Arvore \tFolhas agulhas"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345494270887286, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050345494270887286, guid: 99ee5c24042958f4c97faa25d8c30c18,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -113.03564
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99ee5c24042958f4c97faa25d8c30c18, type: 3}
@@ -5067,6 +5142,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_MinSize
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1114657815, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: 'Cor de flor: Laranja'
+      objectReference: {fileID: 0}
     - target: {fileID: 1282691241, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5090,6 +5169,10 @@ PrefabInstance:
     - target: {fileID: 1282691244, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282691244, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: "Tipo de planta: \xE1rvore "
       objectReference: {fileID: 0}
     - target: {fileID: 1426729071, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_IsActive
@@ -5130,6 +5213,10 @@ PrefabInstance:
     - target: {fileID: 1760152511, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760152511, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: 'Folhas: Agudas'
       objectReference: {fileID: 0}
     - target: {fileID: 1892440960, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_RootOrder
@@ -6904,6 +6991,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef2e7fcfa0f0e4a4a8b2fd5b077f2720, type: 3}
+--- !u!1 &594511634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3560806940114422869, guid: 881d8606ea627aa438fbd7f9fd186266,
+    type: 3}
+  m_PrefabInstance: {fileID: 325684568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &594511635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594511634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c1400d74bf03344fa8c027c241ebe88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 117756166}
+  offset: {x: -1.8, y: 0.04, z: 3.91}
 --- !u!114 &596767772 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 358918393, guid: abe2efcfc56363c45a4d5c0e3b437027,
@@ -13435,6 +13542,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_MinSize
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1114657815, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: 'Cor de flor: amarela'
+      objectReference: {fileID: 0}
     - target: {fileID: 1282691241, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -13458,6 +13569,10 @@ PrefabInstance:
     - target: {fileID: 1282691244, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282691244, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: "Tipo de planta: \xE1rvore"
       objectReference: {fileID: 0}
     - target: {fileID: 1426729071, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_IsActive
@@ -13498,6 +13613,10 @@ PrefabInstance:
     - target: {fileID: 1760152511, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760152511, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: 'Folhas: Em Foice'
       objectReference: {fileID: 0}
     - target: {fileID: 1892440960, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_RootOrder
@@ -14219,6 +14338,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_MinSize
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1114657815, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: 'Cor de Fruto: Laranja'
+      objectReference: {fileID: 0}
     - target: {fileID: 1282691241, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -14242,6 +14365,10 @@ PrefabInstance:
     - target: {fileID: 1282691244, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282691244, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: "Tipo de planta: pequena \xE1rvore "
       objectReference: {fileID: 0}
     - target: {fileID: 1426729071, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_IsActive
@@ -14282,6 +14409,10 @@ PrefabInstance:
     - target: {fileID: 1760152511, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760152511, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: 'Folhas: Folhas em Pico'
       objectReference: {fileID: 0}
     - target: {fileID: 1892440960, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_RootOrder
@@ -18560,6 +18691,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_MinSize
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1114657815, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: 'Cor de flor: Branca'
+      objectReference: {fileID: 0}
     - target: {fileID: 1282691241, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -18583,6 +18718,10 @@ PrefabInstance:
     - target: {fileID: 1282691244, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282691244, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: 'Tipo de planta: Arbusto'
       objectReference: {fileID: 0}
     - target: {fileID: 1426729071, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_IsActive
@@ -18623,6 +18762,10 @@ PrefabInstance:
     - target: {fileID: 1760152511, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760152511, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
+      propertyPath: m_Text
+      value: 'Forma: Esfera irregular'
       objectReference: {fileID: 0}
     - target: {fileID: 1892440960, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_RootOrder
@@ -24215,7 +24358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1469397331, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: plantName
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1760152508, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: m_IsActive

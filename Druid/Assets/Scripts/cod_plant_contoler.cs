@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum PlantType
 {
@@ -37,8 +38,10 @@ public class cod_plant_contoler : MonoBehaviour
     public GameObject animal4;
     public int progresso = 0;
     public bool tirouPlanta = false;
-   
-
+    public Text text;
+    public Text text1;
+    public Text text2; 
+    public Text text3;
     // Start is called before the first frame update
 
     public void RemovePlant()
@@ -115,6 +118,10 @@ public class cod_plant_contoler : MonoBehaviour
                 this.gameObject.transform.localPosition += Vector3.up * 1.5f;
                 this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
 
+                text1.text = " Forma: Esfera irregular ";
+                text2.text = " Cor de flor: Branca ";
+                text3.text = " Tipo de planta: Arbusto ";
+
                 break;
 
 
@@ -131,6 +138,10 @@ public class cod_plant_contoler : MonoBehaviour
 
                 placeholder.GetComponentInChildren<Light>().spotAngle = 125;
                 placeholder.GetComponentInChildren<Light>().intensity = 15;
+
+                text1.text = " Folhas: Agudas ";
+                text2.text = " Cor de flor: Laranja ";
+                text3.text = " Tipo de planta: árvore  ";
                 break;
             case PlantsName.Cronalheira:
                 plantType = PlantType.good;
@@ -139,7 +150,9 @@ public class cod_plant_contoler : MonoBehaviour
                 this.gameObject.transform.localScale *= 3;
                 this.gameObject.transform.localPosition += Vector3.up * 1.5f;
                 this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
-
+                text1.text = " Folhas: Caducas ";
+                text2.text = " Cor de Fruto: Vermelho ";
+                text3.text = " Tipo de planta: Pequena árvore  ";
                 break;
             case PlantsName.Hortência:
                 plantType = PlantType.bad;
@@ -148,6 +161,11 @@ public class cod_plant_contoler : MonoBehaviour
                 this.gameObject.transform.localScale *= 3;
                 this.gameObject.transform.localPosition += Vector3.up * 1.5f;
                 this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
+
+                text1.text = " Forma: Bola ";
+                text2.text = " Cor de flor: Branco , azul ou rosa ";
+                text3.text = " Tipo de planta: Arbusto ";
+
                 break;
             case PlantsName.Àrove_do_incenso:
                 m_Renderer.material.SetTexture("_MainTex", textures[4]);
@@ -156,6 +174,10 @@ public class cod_plant_contoler : MonoBehaviour
                 this.gameObject.transform.localScale *= 3;
                 this.gameObject.transform.localPosition += Vector3.up * 1.5f;
                 this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
+
+                text1.text = " Folhas: Folhas em Pico ";
+                text2.text = " Cor de Fruto: Laranja";
+                text3.text = " Tipo de planta: pequena árvore ";
                 break;
             case PlantsName.Acácia:
                 m_Renderer.material.SetTexture("_MainTex", textures[5]);
@@ -164,6 +186,10 @@ public class cod_plant_contoler : MonoBehaviour
                                 this.gameObject.transform.localScale *= 3;
                 this.gameObject.transform.localPosition += Vector3.up * 1.5f;
                 this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
+
+                text1.text = " Folhas: Em Foice ";
+                text2.text = " Cor de flor: amarela ";
+                text3.text = " Tipo de planta: árvore ";
                 break;
 
             default:
