@@ -18,7 +18,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 2.34
+    value: 1.28
   threshold:
     overrideState: 1
     value: 0.77
@@ -138,20 +138,20 @@ MonoBehaviour:
     overrideState: 1
     value: -12
   mixerRedOutRedIn:
-    overrideState: 1
+    overrideState: 0
     value: 86
   mixerRedOutGreenIn:
-    overrideState: 1
+    overrideState: 0
     value: 23
   mixerRedOutBlueIn:
-    overrideState: 1
+    overrideState: 0
     value: 69
   mixerGreenOutRedIn:
     overrideState: 0
     value: 0
   mixerGreenOutGreenIn:
     overrideState: 0
-    value: 100
+    value: 74
   mixerGreenOutBlueIn:
     overrideState: 0
     value: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
     value: {x: 1, y: 0.9864577, z: 0.99844927, w: 0}
   gain:
     overrideState: 1
-    value: {x: 1, y: 0.896084, z: 0.84054744, w: 0}
+    value: {x: 1, y: 0.896084, z: 0.84054744, w: 0.8389715}
   masterCurve:
     overrideState: 0
     value:
