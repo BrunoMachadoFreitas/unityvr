@@ -78,7 +78,7 @@ public class cod_plant_contoler : MonoBehaviour
             }
             if (variavelPostProcess.GetComponent<gameVariables>().incrementaProgresso == 4)
             {
-                animal2.gameObject.SetActive(true);
+                animal4.gameObject.SetActive(true);
             }
 
 
