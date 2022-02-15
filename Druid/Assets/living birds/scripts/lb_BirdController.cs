@@ -20,6 +20,8 @@ public class lb_BirdController : MonoBehaviour {
 	public bool goldFinch = true;
 	public bool crow = true;
 
+	public GameObject gamevariables;
+
 	bool pause = false;
 	GameObject[] myBirds;
 	List<string> myBirdTypes = new List<string>();
@@ -245,32 +247,42 @@ public class lb_BirdController : MonoBehaviour {
 	}
 
 	void SpawnBird(){
-		if (!pause){
-			GameObject bird = null;
-			int randomBirdIndex = Mathf.FloorToInt (Random.Range (0,myBirds.Length));
-			int loopCheck = 0;
-			//find a random bird that is not active
-			while(bird == null){
-				if(myBirds[randomBirdIndex].activeSelf == false){
-					bird = myBirds[randomBirdIndex];
+	
+		
+			if (!pause)
+			{
+				GameObject bird = null;
+				int randomBirdIndex = Mathf.FloorToInt(Random.Range(0, myBirds.Length));
+				int loopCheck = 0;
+				//find a random bird that is not active
+				while (bird == null)
+				{
+					if (myBirds[randomBirdIndex].activeSelf == false)
+					{
+						bird = myBirds[randomBirdIndex];
+					}
+					randomBirdIndex = randomBirdIndex + 1 >= myBirds.Length ? 0 : randomBirdIndex + 1;
+					loopCheck++;
+					if (loopCheck >= myBirds.Length)
+					{
+						//all birds are active
+						return;
+					}
 				}
-				randomBirdIndex = randomBirdIndex+1 >= myBirds.Length ? 0:randomBirdIndex+1;
-				loopCheck ++;
-				if (loopCheck >= myBirds.Length){
-					//all birds are active
+				//Find a point off camera to positon the bird and activate it
+				bird.transform.position = this.gameObject.transform.position;
+				if (bird.transform.position == Vector3.zero)
+				{
+					//couldnt find a suitable spawn point
 					return;
 				}
-			}
-			//Find a point off camera to positon the bird and activate it
-			bird.transform.position = FindPositionOffCamera();
-			if(bird.transform.position == Vector3.zero){
-				//couldnt find a suitable spawn point
-				return;
-			}else{
-				bird.SetActive (true);
-				activeBirds++;
-				BirdFindTarget(bird);
-			}
+				else
+				{
+					bird.SetActive(true);
+					activeBirds++;
+					BirdFindTarget(bird);
+				}
+			
 		}
 	}
 
