@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class codigo_troca_de_scene : MonoBehaviour
 {
@@ -22,8 +23,8 @@ public class codigo_troca_de_scene : MonoBehaviour
     public void movimentaTeleport_e_Scene()
     {
 
-        LeanTween.move(player, new Vector3(transform.position.x, transform.position.y + 3.5f, transform.position.z), 3).setEase(LeanTweenType.easeInOutSine).setOnComplete(()=>Application.LoadLevel(scene));
-        
+        LeanTween.move(player, new Vector3(transform.position.x, transform.position.y + 3.5f, transform.position.z), 3).setEase(LeanTweenType.easeInOutSine).setOnComplete(()=> SceneManager.LoadScene(scene)); //antes tinha Application.LoadLevel(scene)
+
 
     }
 }
