@@ -15,6 +15,8 @@ public class SeguePlayer : MonoBehaviour
     private bool isRotatingLeft = false;
     private bool isRotatingRight = false;
     public bool isWalking = false;
+    bool podeAndar = false;
+    public GameObject somInicio;
 
     Rigidbody rb;
     Animator animator;
@@ -25,36 +27,38 @@ public class SeguePlayer : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-
+        StartCoroutine("podeIrIdle");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-       if(isWondering == false)
+        if (podeAndar)
         {
-            StartCoroutine(Wander());
-        }
+            if (isWondering == false)
+            {
+                StartCoroutine(Wander());
+            }
 
-       if(isRotatingRight == true)
-        {
-            transform.Rotate(transform.up * Time.deltaTime * rotationSpeed);
-        }
-       if(isRotatingLeft == true)
-        {
-            transform.Rotate(transform.up * Time.deltaTime * -rotationSpeed);
-        }
+            if (isRotatingRight == true)
+            {
+                transform.Rotate(transform.up * Time.deltaTime * rotationSpeed);
+            }
+            if (isRotatingLeft == true)
+            {
+                transform.Rotate(transform.up * Time.deltaTime * -rotationSpeed);
+            }
 
-       if(isWalking == true)
-        {
-            rb.AddForce(transform.forward * movementSpeed);
-            animator.SetBool("estaMover", true);
-        }
+            if (isWalking == true)
+            {
+                rb.AddForce(transform.forward * movementSpeed);
+                animator.SetBool("estaMover", true);
+            }
 
-       if(isWalking == false)
-        {
-            animator.SetBool("estaMover", false);
+            if (isWalking == false)
+            {
+                animator.SetBool("estaMover", false);
+            }
         }
     }
 
@@ -94,5 +98,13 @@ public class SeguePlayer : MonoBehaviour
         isWondering = false;
 
 
+    }
+
+    IEnumerator podeIrIdle()
+    {
+        yield return new WaitForSeconds(5);
+        animator.SetBool("tocaIdle", true);
+        podeAndar = true;
+        somInicio.gameObject.SetActive(false);
     }
 }

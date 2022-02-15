@@ -104,10 +104,10 @@ public class cod_plant_contoler : MonoBehaviour
         m_Renderer = GetComponent<Renderer>();
         progresso = (100 / nmrPlantas);
 
-        text.color = Color.black;
-        text1.color = Color.black;
-        text2.color = Color.black;
-        text3.color = Color.black;
+        text.color = Color.blue;
+        text1.color = Color.blue;
+        text2.color = Color.blue;
+        text3.color = Color.blue;
         switch (plantName)
         {
             case PlantsName.Noveleiro:

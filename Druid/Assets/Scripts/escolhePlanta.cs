@@ -31,11 +31,15 @@ public class escolhePlanta : MonoBehaviour
     {
         boxPlaca.enabled = false;
         canvasPrimeiro.enabled = false;
+        Vector3 rotationVector = transform.rotation.eulerAngles;
+        rotationVector.x = 90;
         placa.GetComponent<cod_plant_contoler>().plantName = plantaEscolhida;
-        Instantiate(placa, primeiroAguentador.transform.position, Quaternion.identity);
+        Instantiate(placa, new Vector3(primeiroAguentador.transform.position.x, primeiroAguentador.transform.position.y + 1f, primeiroAguentador.transform.position.z) , Quaternion.Euler(rotationVector));
        
         placa.gameObject.SetActive(true);
-        placa.transform.localScale = new Vector3(1, 1, 1);
+        
+
+        //placa.transform.rotation = Quaternion.Euler(rotationVector);
         // primeiroAguentador.gameObject.SetActive(false);
 
 
