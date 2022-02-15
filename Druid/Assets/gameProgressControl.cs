@@ -15,10 +15,10 @@ public enum FasesDoJogo
 
 public class gameProgressControl : MonoBehaviour
 {
-    public AudioSource audioSources;
-    public AudioClip[] audioClips;
+    
+    
     public FasesDoJogo faseActual = FasesDoJogo.Inicio;
-
+    public cod_move_around_Player druida;
     public Cod_FinalScene cod_FinalScene;
 
     private float myOwnProgress; //same as progess but doesnt go back
@@ -36,31 +36,32 @@ public class gameProgressControl : MonoBehaviour
                         
                         break;
                     case FasesDoJogo.instrucao:
-                        audioSources.clip = audioClips[2];
-                        audioSources.Play();
+                        druida.audioSources.clip = druida.audioClips[2];
+                        druida.audioSources.Play();
                         //audioSources.PlayOneShot(audioClips[2]);
                         
                         break;
                     case FasesDoJogo.tirar:
-                        audioSources.Stop();
-                        audioSources.clip = audioClips[3];
-                        audioSources.Play();
+                        druida.spinAround();
+                        druida.audioSources.Stop();
+                        druida.audioSources.clip = druida.audioClips[3];
+                        druida.audioSources.Play();
                         break;
                     case FasesDoJogo.plantar:
-                        audioSources.Stop();
-                        audioSources.clip = audioClips[4];
-                        audioSources.Play();
+                        druida.audioSources.Stop();
+                        druida.audioSources.clip = druida.audioClips[4];
+                        druida.audioSources.Play();
                         cod_FinalScene.AppearOneByOne();
                         break;
                     case FasesDoJogo.meio:
-                        audioSources.Stop();
-                        audioSources.clip = audioClips[3];
-                        audioSources.Play();
+                        druida.audioSources.Stop();
+                        druida.audioSources.clip = druida.audioClips[3];
+                        druida.audioSources.Play();
                         break;
                     case FasesDoJogo.fim:
-                        audioSources.Stop();
-                        audioSources.clip = audioClips[4];
-                        audioSources.Play();
+                        druida.audioSources.Stop();
+                        druida.audioSources.clip = druida.audioClips[4];
+                        druida.audioSources.Play();
                         cod_FinalScene.AppearOneByOne();
                         break;
                     default:
@@ -73,9 +74,9 @@ public class gameProgressControl : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {      
-        audioSources.clip = audioClips[1];
-        audioSources.Play();
+    {
+        druida.audioSources.clip = druida.audioClips[1];
+        druida.audioSources.Play();
     }
 
     // Update is called once per frame
