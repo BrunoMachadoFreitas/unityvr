@@ -1246,7 +1246,7 @@ PrefabInstance:
     - target: {fileID: 5340148302855632259, guid: 3adaaa4f6a18c6a4cad207ed78455735,
         type: 3}
       propertyPath: scene
-      value: base_run
+      value: Galeria
       objectReference: {fileID: 0}
     - target: {fileID: 5340148302855632259, guid: 3adaaa4f6a18c6a4cad207ed78455735,
         type: 3}
@@ -8066,7 +8066,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4294901822
+    rgba: 4294941184
 --- !u!23 &1703758437
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10250,7 +10250,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121696496}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 4.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10258,7 +10258,7 @@ Transform:
   - {fileID: 1468553490}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &2123888736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6281047592385034084, guid: 06945043c327a62489bb4acbf561d605,
