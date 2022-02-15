@@ -11,7 +11,7 @@ public class Cod_FinalScene : MonoBehaviour
         teleports = new List<GameObject>();
 
         CapsuleCollider[] ctemp = GetComponentsInChildren<CapsuleCollider>();
-
+        Debug.Log(ctemp.Length);
         foreach (CapsuleCollider item in ctemp)
         {
             teleports.Add(item.gameObject);
@@ -23,9 +23,11 @@ public class Cod_FinalScene : MonoBehaviour
     
     public void AppearOneByOne()
     {
+        
         foreach (GameObject item in teleports)
         {
-            LeanTween.moveLocalY(item, 0.5f, 1).setDelay(teleports.IndexOf(item));
+            Debug.Log("tou aqui");
+            LeanTween.moveLocalY(item,15f, 1).setDelay(teleports.IndexOf(item));
         }
     }
  
