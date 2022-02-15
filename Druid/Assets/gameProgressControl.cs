@@ -36,6 +36,7 @@ public class gameProgressControl : MonoBehaviour
                         
                         break;
                     case FasesDoJogo.instrucao:
+                        
                         druida.audioSources.clip = druida.audioClips[2];
                         druida.audioSources.Play();
                         //audioSources.PlayOneShot(audioClips[2]);
@@ -75,6 +76,7 @@ public class gameProgressControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        druida.movePrimeiraArvore();
         druida.audioSources.clip = druida.audioClips[1];
         druida.audioSources.Play();
     }

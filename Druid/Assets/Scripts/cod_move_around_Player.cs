@@ -13,9 +13,11 @@ public class cod_move_around_Player : MonoBehaviour
     public AudioClip[] audioClips1;
     public AudioClip[] audioClips2;
     public float space_around = 1.5f;
+
+    public GameObject targetPrimeiraArvore;
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
@@ -23,7 +25,12 @@ public class cod_move_around_Player : MonoBehaviour
     {
         
     }
-
+    public void movePrimeiraArvore()
+    {
+        LeanTween.move(this.gameObject, targetPrimeiraArvore.transform, 5f).setEase(LeanTweenType.easeInOutQuad);
+        LeanTween.rotateY(this.gameObject, 300 * 5, 20);
+      //  this.gameObject.transform.RotateAround(targetPrimeiraArvore.transform.position, Vector3.up, 20 * Time.deltaTime);
+    }
     public void spinAround()
     {
         
