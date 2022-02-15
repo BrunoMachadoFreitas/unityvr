@@ -23,6 +23,8 @@ public class mostraInfoPlanta : MonoBehaviour
     private float progress = 0;
     public bool podeTirar = false;
     public Transform player;
+
+    public GameObject jatirouParaPlantar;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,8 +44,9 @@ public class mostraInfoPlanta : MonoBehaviour
 
             textProgress.text = timeToInt.ToString() +  "%";
         }
-
-        mostraText();
+      
+            mostraText();
+        
     }
 
     public void mostraProgressBar()
@@ -51,7 +54,10 @@ public class mostraInfoPlanta : MonoBehaviour
        
         progressBar.gameObject.SetActive(true);
         podeContar = true;
-        canvas.gameObject.SetActive(true);
+        if (jatirouParaPlantar.gameObject.GetComponent<cod_plant_contoler>().tirouPlanta == false)
+        {
+            canvas.gameObject.SetActive(true);
+        }
     }
    
     public void exitPlanta()
@@ -66,22 +72,24 @@ public class mostraInfoPlanta : MonoBehaviour
 
    public void mostraText()
     {
-        if(timeLeft <= 75)
-        {
-            text1.gameObject.SetActive(true);
-        }
-        if(timeLeft <= 50)
-        {
-            text2.gameObject.SetActive(true);
-        }
-        if (timeLeft <= 25)
-        {
-            text3.gameObject.SetActive(true);
-        }
-        if (timeLeft <= 5)
-        {
-            text4.gameObject.SetActive(true);
-            podeTirar = true;
-        }
+      
+            if (timeLeft <= 75)
+            {
+                text1.gameObject.SetActive(true);
+            }
+            if (timeLeft <= 50)
+            {
+                text2.gameObject.SetActive(true);
+            }
+            if (timeLeft <= 25)
+            {
+                text3.gameObject.SetActive(true);
+            }
+            if (timeLeft <= 5)
+            {
+                text4.gameObject.SetActive(true);
+                podeTirar = true;
+            }
+       
     }
 }

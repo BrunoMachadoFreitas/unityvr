@@ -114,7 +114,7 @@ public class cod_plant_contoler : MonoBehaviour
                 this.gameObject.LeanScaleY(2, 2);
                 this.gameObject.LeanScaleZ(2, 3);
 
-                this.gameObject.transform.localScale *= 3;
+                
                 this.gameObject.transform.localPosition += Vector3.up * 1.5f;
                 this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
 
@@ -129,9 +129,9 @@ public class cod_plant_contoler : MonoBehaviour
                 plantType = PlantType.good;
                 m_Renderer.material.SetTexture("_MainTex", textures[1]);
               
-                this.gameObject.transform.localScale *= 3;
+                
                 //this.transform.SetParent(aguentadorPlantas);
-                this.gameObject.transform.position += new Vector3(-0.0002f, 0.0039f, 0.0416f);
+               
              
                // this.gameObject.transform.localPosition = new Vector3(0,GetComponent<MeshFilter>().mesh.bounds.extents.y,0);
 
@@ -147,9 +147,8 @@ public class cod_plant_contoler : MonoBehaviour
                 plantType = PlantType.good;
                 m_Renderer.material.SetTexture("_MainTex", textures[2]);
 
-                this.gameObject.transform.localScale *= 3;
-                this.gameObject.transform.localPosition += Vector3.up * 1.5f;
-                this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
+                
+               
                 text1.text = " Folhas: Caducas ";
                 text2.text = " Cor de Fruto: Vermelho ";
                 text3.text = " Tipo de planta: Pequena árvore  ";
@@ -158,9 +157,8 @@ public class cod_plant_contoler : MonoBehaviour
                 plantType = PlantType.bad;
                 m_Renderer.material.SetTexture("_MainTex", textures[3]);
 
-                this.gameObject.transform.localScale *= 3;
-                this.gameObject.transform.localPosition += Vector3.up * 1.5f;
-                this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
+            
+              
 
                 text1.text = " Forma: Bola ";
                 text2.text = " Cor de flor: Branco , azul ou rosa ";
@@ -171,9 +169,8 @@ public class cod_plant_contoler : MonoBehaviour
                 m_Renderer.material.SetTexture("_MainTex", textures[4]);
                 plantType = PlantType.bad;
 
-                this.gameObject.transform.localScale *= 3;
-                this.gameObject.transform.localPosition += Vector3.up * 1.5f;
-                this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
+              
+               
 
                 text1.text = " Folhas: Folhas em Pico ";
                 text2.text = " Cor de Fruto: Laranja";
@@ -183,9 +180,8 @@ public class cod_plant_contoler : MonoBehaviour
                 m_Renderer.material.SetTexture("_MainTex", textures[5]);
                 plantType = PlantType.bad;
 
-                                this.gameObject.transform.localScale *= 3;
-                this.gameObject.transform.localPosition += Vector3.up * 1.5f;
-                this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
+                                
+               
 
                 text1.text = " Folhas: Em Foice ";
                 text2.text = " Cor de flor: amarela ";

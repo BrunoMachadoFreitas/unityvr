@@ -12,6 +12,8 @@ public class escolhePlanta : MonoBehaviour
     private BoxCollider boxPlaca;
     public Canvas canvasPrimeiro;
     public GameObject mostraVasos;
+
+    public bool japlantou = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,11 +33,13 @@ public class escolhePlanta : MonoBehaviour
         canvasPrimeiro.enabled = false;
         placa.GetComponent<cod_plant_contoler>().plantName = plantaEscolhida;
         Instantiate(placa, primeiroAguentador.transform.position, Quaternion.identity);
+       
         placa.gameObject.SetActive(true);
-        
-       // primeiroAguentador.gameObject.SetActive(false);
+        placa.transform.localScale = new Vector3(1, 1, 1);
+        // primeiroAguentador.gameObject.SetActive(false);
 
 
         vasos.gameObject.SetActive(false);
+        japlantou = true;
     }
 }

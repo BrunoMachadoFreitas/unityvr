@@ -7,6 +7,7 @@ public class MostraLivro : MonoBehaviour
     public Transform Livro;
     public Transform posicaoLivro;
     public GameObject LivroObj;
+    public GameObject livroUi;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class MostraLivro : MonoBehaviour
 
     public void mostraLivro()
     {
+        livroUi.gameObject.SetActive(false);
         LivroObj.gameObject.SetActive(true);
         Livro.transform.position = posicaoLivro.transform.position;
 

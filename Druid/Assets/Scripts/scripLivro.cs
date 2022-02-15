@@ -9,19 +9,20 @@ public class scripLivro : MonoBehaviour
     public GameObject ponteiro;
     public GameObject livro;
     public GameObject posicaoLivro;
-
+    public GameObject livroUi;
     public void Update()
     {
         
     }
     public void fazAnimacao()
     {
-        Livro.GetComponent<Animator>().Play("animaLivro");
+        //Livro.GetComponent<Animator>().Play("animaLivro");
        
     }
     public void desapareceLivro()
     {
         livro.gameObject.SetActive(false);
+        livroUi.gameObject.SetActive(true);
     }
 
    
