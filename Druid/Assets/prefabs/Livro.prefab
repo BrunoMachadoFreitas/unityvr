@@ -713,8 +713,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.216, y: -0.44}
-  m_SizeDelta: {x: 121.1923, y: 17.183}
+  m_AnchoredPosition: {x: 0.10808, y: -0.44}
+  m_SizeDelta: {x: 49.24726, y: 17.183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1630222943641267502
 CanvasRenderer:
@@ -944,19 +944,20 @@ PrefabInstance:
     - target: {fileID: 3366788132868305197, guid: 8bb9c805a15689d4daf464ebc7db6b86,
         type: 3}
       propertyPath: m_text
-      value: 'Boas
+      value: 'Boas:
+
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 3366788132868305197, guid: 8bb9c805a15689d4daf464ebc7db6b86,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3366788132868305197, guid: 8bb9c805a15689d4daf464ebc7db6b86,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3366788132868305197, guid: 8bb9c805a15689d4daf464ebc7db6b86,
         type: 3}
@@ -983,20 +984,30 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4279889422
       objectReference: {fileID: 0}
+    - target: {fileID: 3366788132868305197, guid: 8bb9c805a15689d4daf464ebc7db6b86,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3366788132868305197, guid: 8bb9c805a15689d4daf464ebc7db6b86,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3366788132913920461, guid: 8bb9c805a15689d4daf464ebc7db6b86,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.31146
+      value: -0.23869
       objectReference: {fileID: 0}
     - target: {fileID: 3366788132913920461, guid: 8bb9c805a15689d4daf464ebc7db6b86,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 174.55222
+      value: 223.06711
       objectReference: {fileID: 0}
     - target: {fileID: 3366788132913920462, guid: 8bb9c805a15689d4daf464ebc7db6b86,
         type: 3}
       propertyPath: m_text
-      value: "Arbustro\tFlor so branca"
+      value: "Arbustro\t\tFlor so branca"
       objectReference: {fileID: 0}
     - target: {fileID: 3366788132913920462, guid: 8bb9c805a15689d4daf464ebc7db6b86,
         type: 3}
@@ -1006,12 +1017,12 @@ PrefabInstance:
     - target: {fileID: 3366788132913920462, guid: 8bb9c805a15689d4daf464ebc7db6b86,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 3366788132913920462, guid: 8bb9c805a15689d4daf464ebc7db6b86,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3366788132913920462, guid: 8bb9c805a15689d4daf464ebc7db6b86,
         type: 3}

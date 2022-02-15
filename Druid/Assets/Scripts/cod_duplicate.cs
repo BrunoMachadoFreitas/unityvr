@@ -9,7 +9,7 @@ public class cod_duplicate : MonoBehaviour
   
     private int min = 1;
     public int max = 6;
-    public int chosen ;
+    public int chosen = 3 ;
     void Start()
     {
         tables = new List<GameObject>();
@@ -20,7 +20,7 @@ public class cod_duplicate : MonoBehaviour
             tables.Add(item.gameObject);
         }
         //print(tables.Count);
-        chosen = max / 2;
+        
 
         InvokeRepeating("duplicate", 5,10); //primeiro parametro quantos segundos até primeira vez, de quanto em quanto tempo
     }
@@ -36,8 +36,7 @@ public class cod_duplicate : MonoBehaviour
     {
 
         int saiu = Random.Range(min, max);
-        print("SAIU? "+saiu);
-        print("chosen? " + chosen);
+       
 
         if ( saiu == chosen)
             {
@@ -65,9 +64,10 @@ public class cod_duplicate : MonoBehaviour
         GameObject go = GameObject.Instantiate(chosenTree);
 
         go.transform.SetParent(this.gameObject.transform);
-        go.transform.position = transform.position + (transform.right * 1.5f);
+        go.transform.position = chosenTree.transform.position + (new Vector3(2,0,0));
 
-        yield return new WaitForSeconds(2);
+        
+        yield return new WaitForSeconds(10);
 
         chosenTree.GetComponentInChildren<cod_plant_contoler>().GetComponent<Renderer>().material.shader = Shader.Find("Custom/cut-Out");
         go.GetComponentInChildren<cod_plant_contoler>().GetComponent<Renderer>().material.shader = Shader.Find("Custom/cut-Out");
