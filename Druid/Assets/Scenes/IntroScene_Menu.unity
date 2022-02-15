@@ -6920,6 +6920,7 @@ MonoBehaviour:
   Livro: {fileID: 0}
   posicaoLivro: {fileID: 0}
   LivroObj: {fileID: 0}
+  livroUi: {fileID: 0}
 --- !u!114 &1468553492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7694,7 +7695,7 @@ PrefabInstance:
     - target: {fileID: 2693568410824247568, guid: cc5635997cecba54facca82082413fb4,
         type: 3}
       propertyPath: scene
-      value: Level1
+      value: base_Final
       objectReference: {fileID: 0}
     - target: {fileID: 7587738944053119481, guid: cc5635997cecba54facca82082413fb4,
         type: 3}

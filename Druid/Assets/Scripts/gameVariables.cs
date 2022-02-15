@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.SceneManagement;
 
 public class gameVariables : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class gameVariables : MonoBehaviour
             {
                 apresentaGameOver.gameObject.SetActive(true);
                 _ColorGrading.saturation.value = -100;
+                StartCoroutine("func");
             }
             points = value;
 
@@ -60,6 +62,12 @@ public class gameVariables : MonoBehaviour
     {
         get { return incrementaProgresso; }
         
+    }
+
+    IEnumerator func()
+    {
+        yield return new WaitForSecondsRealtime(5); //Wait 1 second
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
 }
