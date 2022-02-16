@@ -7,9 +7,10 @@
       _Amp("Amplitude",Range(0,1)) = 0.5
     }
     SubShader {
+      Cull Off
       CGPROGRAM
-      #pragma surface surf Lambert vertex:vert 
-      
+      #pragma surface surf Lambert vertex:vert alpha
+    
       struct Input {
           float2 uv_MainTex;
           float3 vertColor;
@@ -43,6 +44,7 @@
       void surf (Input IN, inout SurfaceOutput o) {
           float4 c = tex2D(_MainTex, IN.uv_MainTex);
           o.Albedo = c * IN.vertColor.rgb;
+          o.Alpha = c.a;
       }
       ENDCG
 
