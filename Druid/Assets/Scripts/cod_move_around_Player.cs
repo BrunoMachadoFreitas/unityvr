@@ -12,6 +12,7 @@ public class cod_move_around_Player : MonoBehaviour
     public AudioClip[] audioClips;
     public AudioClip[] audioClips1;
     public AudioClip[] audioClips2;
+    public AudioClip[] audioClipsEnd;
     public float space_around = 1.5f;
 
     public GameObject targetPrimeiraArvore;

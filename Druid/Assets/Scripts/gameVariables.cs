@@ -14,8 +14,9 @@ public class gameVariables : MonoBehaviour
     private ColorGrading _ColorGrading;
     private gameProgressControl gameProgressControl;
     public int incrementaProgresso = 0;
-
+    public somDruidajunior druidaJunior;
     public GameObject apresentaGameOver;
+    public cod_move_around_Player druida;
 
 
     public float Points   // property
@@ -35,6 +36,11 @@ public class gameVariables : MonoBehaviour
             {
                 apresentaGameOver.gameObject.SetActive(true);
                 _ColorGrading.saturation.value = -100;
+                //som fim
+                druidaJunior.audioSources.Stop();
+                druida.audioSources.Stop();
+                druida.audioSources.clip = druida.audioClipsEnd[0];
+                druida.audioSources.Play();
                 StartCoroutine("func");
             }
             points = value;
@@ -66,6 +72,7 @@ public class gameVariables : MonoBehaviour
 
     IEnumerator func()
     {
+
         yield return new WaitForSecondsRealtime(5); //Wait 1 second
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }

@@ -1675,7 +1675,7 @@ PrefabInstance:
       objectReference: {fileID: 1317833859}
     - target: {fileID: 1469397331, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: plantName
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1469397331, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: text
@@ -3725,10 +3725,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4ee39ab291f32b42beff7a9ed1983f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 20
+  points: 4.5
   postProcessProfile: {fileID: 216914676}
   incrementaProgresso: 0
   apresentaGameOver: {fileID: 1737734468}
+  druida: {fileID: 1252568239}
 --- !u!4 &611676225
 Transform:
   m_ObjectHideFlags: 0
@@ -6462,6 +6463,8 @@ MonoBehaviour:
   audioClips2:
   - {fileID: 8300000, guid: 3700c636d1b7a464cb3f7201bd8a6c48, type: 3}
   - {fileID: 8300000, guid: 23e7b27b041df184e9bade258c1c5f63, type: 3}
+  audioClipsEnd:
+  - {fileID: 8300000, guid: 9940ddc6b18265d4eb2b3703db7256ee, type: 3}
   space_around: 1.5
   targetPrimeiraArvore: {fileID: 248268554}
 --- !u!4 &1252568240
