@@ -44,15 +44,15 @@ public class cod_duplicate : MonoBehaviour
         
       
             int chosen = Random.Range(0, tables.Count - 1);
-            tables[chosen].GetComponentInChildren<cod_plant_contoler>().GetComponent<Renderer>().material.shader = Shader.Find("Holistic/Waves");
+           
     
             // print(chosen);
             if (tables[chosen].GetComponentInChildren<cod_plant_contoler>().plantType == PlantType.bad)
                 {
                 StartCoroutine(ChnageAgain(tables[chosen]));
+                tables[chosen].GetComponentInChildren<cod_plant_contoler>().GetComponent<Renderer>().material.shader = Shader.Find("Holistic/Waves");
 
-         
-                }
+            }
             }
 
 

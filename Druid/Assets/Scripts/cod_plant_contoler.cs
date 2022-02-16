@@ -113,34 +113,15 @@ public class cod_plant_contoler : MonoBehaviour
             case PlantsName.Noveleiro:
                 plantType = PlantType.good;
                 m_Renderer.material.SetTexture("_MainTex", textures[0]);
-                this.gameObject.LeanScaleY(2, 2);
-                this.gameObject.LeanScaleZ(2, 3);
-
-                
-                this.gameObject.transform.localPosition += Vector3.up * 1.5f;
-                this.gameObject.transform.localPosition += Vector3.forward * 0.5f;
-
                 text1.text = " Forma: Esfera irregular ";
                 text2.text = " Cor de flor: Branca ";
                 text3.text = " Tipo de planta: Arbusto ";
-
                 break;
-
-
             case PlantsName.Pinheiro_Bravo:
                 plantType = PlantType.good;
                 m_Renderer.material.SetTexture("_MainTex", textures[1]);
-              
-                
-                //this.transform.SetParent(aguentadorPlantas);
-               
-             
-               // this.gameObject.transform.localPosition = new Vector3(0,GetComponent<MeshFilter>().mesh.bounds.extents.y,0);
-
-
                 placeholder.GetComponentInChildren<Light>().spotAngle = 125;
                 placeholder.GetComponentInChildren<Light>().intensity = 15;
-
                 text1.text = " Folhas: Agudas ";
                 text2.text = " Cor de flor: Laranja ";
                 text3.text = " Tipo de planta: árvore  ";
@@ -148,9 +129,6 @@ public class cod_plant_contoler : MonoBehaviour
             case PlantsName.Cronalheira:
                 plantType = PlantType.good;
                 m_Renderer.material.SetTexture("_MainTex", textures[2]);
-
-                
-               
                 text1.text = " Folhas: Caducas ";
                 text2.text = " Cor de Fruto: Vermelho ";
                 text3.text = " Tipo de planta: Pequena árvore  ";
@@ -158,22 +136,13 @@ public class cod_plant_contoler : MonoBehaviour
             case PlantsName.Hortência:
                 plantType = PlantType.bad;
                 m_Renderer.material.SetTexture("_MainTex", textures[3]);
-
-            
-              
-
                 text1.text = " Forma: Bola ";
                 text2.text = " Cor de flor: Branco , azul ou rosa ";
                 text3.text = " Tipo de planta: Arbusto ";
-
                 break;
             case PlantsName.Àrove_do_incenso:
                 m_Renderer.material.SetTexture("_MainTex", textures[4]);
                 plantType = PlantType.bad;
-
-              
-               
-
                 text1.text = " Folhas: Folhas agulhas";
                 text2.text = " Cor de Fruto: Laranja";
                 text3.text = " Tipo de planta: pequena árvore ";
@@ -181,15 +150,10 @@ public class cod_plant_contoler : MonoBehaviour
             case PlantsName.Acácia:
                 m_Renderer.material.SetTexture("_MainTex", textures[5]);
                 plantType = PlantType.bad;
-
-                                
-               
-
                 text1.text = " Folhas: Em Foice ";
                 text2.text = " Cor de flor: amarela ";
                 text3.text = " Tipo de planta: árvore ";
                 break;
-
             default:
                 break;
         }
