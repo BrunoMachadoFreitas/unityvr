@@ -3728,6 +3728,7 @@ MonoBehaviour:
   points: 4.5
   postProcessProfile: {fileID: 216914676}
   incrementaProgresso: 0
+  druidaJunior: {fileID: 287750690}
   apresentaGameOver: {fileID: 1737734468}
   druida: {fileID: 1252568239}
 --- !u!4 &611676225
