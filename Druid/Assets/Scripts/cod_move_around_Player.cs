@@ -27,7 +27,7 @@ public class cod_move_around_Player : MonoBehaviour
     }
     public void movePrimeiraArvore()
     {
-        LeanTween.move(this.gameObject, targetPrimeiraArvore.transform, 5f).setEase(LeanTweenType.easeInOutQuad);
+        LeanTween.move(this.gameObject, targetPrimeiraArvore.transform, 10f).setEase(LeanTweenType.easeInOutQuad);
         LeanTween.rotateY(this.gameObject, 300 * 5, 20);
       //  this.gameObject.transform.RotateAround(targetPrimeiraArvore.transform.position, Vector3.up, 20 * Time.deltaTime);
     }
@@ -51,7 +51,10 @@ public class cod_move_around_Player : MonoBehaviour
 
     public void Piscar()
     {
-        LeanTween.scale(growPart, growPart.transform.localScale * 20, 1f).setOnComplete(() => { LeanTween.scale(growPart, growPart.transform.localScale / 20, 1f).setOnComplete(()=>Piscar()); });
+        LeanTween.scale(growPart, growPart.transform.localScale * 20, 3f).setOnComplete(() => { 
+            LeanTween.scale(growPart, growPart.transform.localScale / 20, 3f).setOnComplete(() => 
+        LeanTween.scale(growPart, growPart.transform.localScale * 20, 3f).setOnComplete(() => { 
+            LeanTween.scale(growPart, growPart.transform.localScale / 20, 3f); })); });
     }
    
 }

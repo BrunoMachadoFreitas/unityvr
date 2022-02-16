@@ -10,6 +10,7 @@ public class cod_duplicate : MonoBehaviour
     private int min = 1;
     public int max = 6;
     public int chosen = 3 ;
+    public GameObject variavelPostProcess;
     void Start()
     {
         tables = new List<GameObject>();
@@ -71,7 +72,7 @@ public class cod_duplicate : MonoBehaviour
 
         chosenTree.GetComponentInChildren<cod_plant_contoler>().GetComponent<Renderer>().material.shader = Shader.Find("Custom/cut-Out");
         go.GetComponentInChildren<cod_plant_contoler>().GetComponent<Renderer>().material.shader = Shader.Find("Custom/cut-Out");
-
+        variavelPostProcess.GetComponent<gameVariables>().Points -= 5;
         //After we have waited 5 seconds print the time again.
         yield break;
     }

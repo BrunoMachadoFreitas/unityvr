@@ -580,6 +580,8 @@ GameObject:
   - component: {fileID: 1114657813}
   - component: {fileID: 1114657814}
   - component: {fileID: 1114657815}
+  - component: {fileID: 1499839567}
+  - component: {fileID: 1499839568}
   m_Layer: 5
   m_Name: Info1
   m_TagString: Untagged
@@ -646,6 +648,66 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: New Text
+--- !u!102 &1499839567
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114657812}
+  m_Text: 
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 0
+  m_Alignment: 0
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+--- !u!23 &1499839568
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114657812}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1282691241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,7 +1196,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.9232155, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 6.17
   m_Range: 4.33
   m_SpotAngle: 30
@@ -2143,6 +2205,11 @@ PrefabInstance:
       propertyPath: plantType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3113331502745582672, guid: 7643848682d40624696486e95b5b6568,
+        type: 3}
+      propertyPath: nmrPlantas
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3783093985742771620, guid: 7643848682d40624696486e95b5b6568,
         type: 3}
       propertyPath: m_Mesh
@@ -2255,6 +2322,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7643848682d40624696486e95b5b6568, type: 3}
+--- !u!1 &2284725163212050619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3783093985742771640, guid: 7643848682d40624696486e95b5b6568,
+    type: 3}
+  m_PrefabInstance: {fileID: 3113331503644001539}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2005414189 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3113331502209037358, guid: 7643848682d40624696486e95b5b6568,
@@ -2267,12 +2340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403b1bf925e4feb4a9e44e744ac248f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2284725163212050619 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3783093985742771640, guid: 7643848682d40624696486e95b5b6568,
-    type: 3}
-  m_PrefabInstance: {fileID: 3113331503644001539}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2284725163212050616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3783093985742771643, guid: 7643848682d40624696486e95b5b6568,

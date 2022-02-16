@@ -174,7 +174,7 @@ public class cod_plant_contoler : MonoBehaviour
               
                
 
-                text1.text = " Folhas: Folhas em Pico ";
+                text1.text = " Folhas: Folhas agulhas";
                 text2.text = " Cor de Fruto: Laranja";
                 text3.text = " Tipo de planta: pequena árvore ";
                 break;
