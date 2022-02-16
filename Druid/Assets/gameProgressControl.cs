@@ -161,12 +161,14 @@ public class gameProgressControl : MonoBehaviour
             {
                 druidaJunior.audioSources.clip = druidaJunior.audioClips[juniroindex];
                 druidaJunior.audioSources.Play();
+                druida.Regressar();
                 juniroindex++;
                 yield return new WaitForSeconds(druidaJunior.audioSources.clip.length);
                 vez++;
             }
             else if(!druidaJunior.audioSources.isPlaying && !druida.audioSources.isPlaying)
             {
+                druida.Piscar();
                 druida.movePrimeiraArvore();
                 yield return null;
             }
