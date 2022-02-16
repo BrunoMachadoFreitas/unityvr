@@ -23,7 +23,7 @@ public class cod_duplicate : MonoBehaviour
         //print(tables.Count);
         
 
-        InvokeRepeating("duplicate", 5,10); //primeiro parametro quantos segundos até primeira vez, de quanto em quanto tempo
+        InvokeRepeating("duplicate", 180,10); //primeiro parametro quantos segundos até primeira vez, de quanto em quanto tempo
     }
 
     // Update is called once per frame

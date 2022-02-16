@@ -37,14 +37,14 @@ public class cod_move_around_Player : MonoBehaviour
         
     LTSpline ltSpline = new LTSpline(
             new Vector3[] {
-                new Vector3(player.transform.position.x, 2, player.transform.position.z) + player.transform.up * space_around,
-                new Vector3(player.transform.position.x, 2, player.transform.position.z) - player.transform.forward * space_around,
-                new Vector3(player.transform.position.x, 2, player.transform.position.z) + player.transform.up,
-                new Vector3(player.transform.position.x, 2, player.transform.position.z) + player.transform.right * space_around,
-                new Vector3(player.transform.position.x, 2, player.transform.position.z) - player.transform.forward * space_around,
-                new Vector3(player.transform.position.x, 2, player.transform.position.z) + (-player.transform.right) * space_around,
-                new Vector3(player.transform.position.x, 2, player.transform.position.z) + player.transform.forward * space_around,
-                new Vector3(player.transform.position.x, 3.5f, player.transform.position.z) + player.transform.forward * space_around,
+                new Vector3(player.transform.position.x, 4, player.transform.position.z) + player.transform.up * space_around,
+                new Vector3(player.transform.position.x, 4, player.transform.position.z) - player.transform.forward * space_around,
+                new Vector3(player.transform.position.x, 4, player.transform.position.z) + player.transform.up,
+                new Vector3(player.transform.position.x, 4, player.transform.position.z) + player.transform.right * space_around,
+                new Vector3(player.transform.position.x, 4, player.transform.position.z) - player.transform.forward * space_around,
+                new Vector3(player.transform.position.x, 4, player.transform.position.z) + (-player.transform.right) * space_around,
+                new Vector3(player.transform.position.x, 4, player.transform.position.z) + player.transform.forward * space_around,
+                new Vector3(player.transform.position.x, 7f, player.transform.position.z) + player.transform.forward * space_around,
     }); ;
 
         LeanTween.moveSpline(this.gameObject, ltSpline, 5f).setOrientToPath(true).setEase(LeanTweenType.easeInOutQuad).setOnComplete(()=> { spinAround(); }); ;
@@ -52,10 +52,15 @@ public class cod_move_around_Player : MonoBehaviour
 
     public void Piscar()
     {
-        LeanTween.scale(growPart, growPart.transform.localScale * 20, 3f).setOnComplete(() => { 
-            LeanTween.scale(growPart, growPart.transform.localScale / 20, 3f).setOnComplete(() => 
-        LeanTween.scale(growPart, growPart.transform.localScale * 20, 3f).setOnComplete(() => { 
-            LeanTween.scale(growPart, growPart.transform.localScale / 20, 3f); })); });
+        LeanTween.scale(growPart, Vector3.one * 100, 5f);
+
+      
     }
-   
+
+    public void Regressar()
+    {
+        LeanTween.scale(growPart,Vector3.one , 1f);
+
+    }
+
 }
