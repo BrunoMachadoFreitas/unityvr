@@ -52,10 +52,15 @@ public class cod_move_around_Player : MonoBehaviour
 
     public void Piscar()
     {
-        LeanTween.scale(growPart, growPart.transform.localScale * 20, 3f).setOnComplete(() => { 
-            LeanTween.scale(growPart, growPart.transform.localScale / 20, 3f).setOnComplete(() => 
-        LeanTween.scale(growPart, growPart.transform.localScale * 20, 3f).setOnComplete(() => { 
-            LeanTween.scale(growPart, growPart.transform.localScale / 20, 3f); })); });
+        LeanTween.scale(growPart, growPart.transform.localScale * 20, 3f).setOnComplete(() =>
+        {
+            LeanTween.scale(growPart, growPart.transform.localScale / 20, 3f).setOnComplete(() =>
+        LeanTween.scale(growPart, growPart.transform.localScale * 20, 3f).setOnComplete(() =>
+        {
+            LeanTween.scale(growPart, growPart.transform.localScale / 20, 3f);
+        })).setOnComplete(() => { LeanTween.scale(growPart, Vector3.one, 1f); });
+        }); 
+
     }
    
 }

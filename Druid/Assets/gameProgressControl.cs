@@ -22,8 +22,9 @@ public class gameProgressControl : MonoBehaviour
     public Cod_FinalScene cod_FinalScene;
 
     private int vez = 0;
-    private int druidaind=4;
-    private int juniroindex = 4;
+    private int druidaind=0;
+    private int juniroindex = 0;
+    private bool acabei = false;
 
 
     private float myOwnProgress; //same as progess but doesnt go back
@@ -38,21 +39,35 @@ public class gameProgressControl : MonoBehaviour
                 if(value > 20 && value < 40 && (int)faseActual < (int)FasesDoJogo.instrucao)
                 {
                     faseActual = FasesDoJogo.instrucao;
+                    druida.spinAround();
+                    druida.audioSources.Stop();
+                    druidaJunior.audioSources.Stop();
+                    StartCoroutine(parte2());
                 }
                 else if (value > 40 && value < 60 && (int)faseActual < (int)FasesDoJogo.meio)
                 {
                     faseActual = FasesDoJogo.meio;
+                    druida.audioSources.Stop();
+                    druida.audioSources.clip = druida.audioClips[3];
+                    druida.audioSources.Play();
                 }
                 else if (value > 60 && value < 80 && (int)faseActual < (int)FasesDoJogo.plantar)
                 {
                     faseActual = FasesDoJogo.plantar;
+                    druida.audioSources.Stop();
+                    druidaJunior.audioSources.Stop();
+                    StartCoroutine(parte3());
                 }
                 else if (value > 80 && value < 100 && (int)faseActual < (int)FasesDoJogo.fim)
                 {
                     faseActual = FasesDoJogo.fim;
+                    acabei = true;
+                    druida.audioSources.clip = druida.audioClips[4];
+                    druida.audioSources.Play();
+                    cod_FinalScene.AppearOneByOne();
                 }
 
-                switch (faseActual)
+                /*switch (faseActual)
                 {
                     case FasesDoJogo.Inicio:
                         
@@ -77,15 +92,21 @@ public class gameProgressControl : MonoBehaviour
                         druida.audioSources.clip = druida.audioClips[3];
                         druida.audioSources.Play();
                         break;
+
                     case FasesDoJogo.fim:
                         druida.audioSources.Stop();
-                        druida.audioSources.clip = druida.audioClips[4];
-                        druida.audioSources.Play();
-                        cod_FinalScene.AppearOneByOne();
+                        if (!acabei) 
+                        {
+                            acabei = true;
+                            druida.audioSources.clip = druida.audioClips[4];
+                            druida.audioSources.Play();
+                            cod_FinalScene.AppearOneByOne();
+                        }
+
                         break;
                     default:
                         break;
-                }
+                }*/
 
 
                 myOwnProgress = value; }; }  // set method

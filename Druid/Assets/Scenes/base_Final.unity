@@ -1675,7 +1675,7 @@ PrefabInstance:
       objectReference: {fileID: 1317833859}
     - target: {fileID: 1469397331, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: plantName
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1469397331, guid: abe2efcfc56363c45a4d5c0e3b437027, type: 3}
       propertyPath: text
@@ -3477,11 +3477,11 @@ Transform:
   - {fileID: 710266597}
   - {fileID: 654717926}
   - {fileID: 2008707370}
-  - {fileID: 329288673}
   - {fileID: 496215338}
   - {fileID: 248268555}
-  - {fileID: 1566772670}
+  - {fileID: 329288673}
   - {fileID: 1839734075}
+  - {fileID: 1566772670}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3725,7 +3725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4ee39ab291f32b42beff7a9ed1983f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 4.5
+  points: 19
   postProcessProfile: {fileID: 216914676}
   incrementaProgresso: 0
   druidaJunior: {fileID: 287750690}
@@ -9957,8 +9957,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.556695, y: 16.629133, z: 6.0710235}
-  m_Center: {x: -1.778348, y: 7.8145666, z: -0.23815823}
+  m_Size: {x: 2.0934136, y: 16.629133, z: 6.0710235}
+  m_Center: {x: -3.0099888, y: 7.8145666, z: -0.23815823}
 --- !u!1001 &2082568309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10835,12 +10835,12 @@ PrefabInstance:
     - target: {fileID: 2363847546904658418, guid: 18e2107cccb5b844ebe8e130976d38cc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.2
+      value: 4.8
       objectReference: {fileID: 0}
     - target: {fileID: 2363847546904658418, guid: 18e2107cccb5b844ebe8e130976d38cc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 31.58
+      value: -2.96
       objectReference: {fileID: 0}
     - target: {fileID: 2363847546904658418, guid: 18e2107cccb5b844ebe8e130976d38cc,
         type: 3}
