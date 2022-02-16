@@ -3477,11 +3477,11 @@ Transform:
   - {fileID: 710266597}
   - {fileID: 654717926}
   - {fileID: 2008707370}
-  - {fileID: 329288673}
   - {fileID: 496215338}
   - {fileID: 248268555}
-  - {fileID: 1566772670}
+  - {fileID: 329288673}
   - {fileID: 1839734075}
+  - {fileID: 1566772670}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
