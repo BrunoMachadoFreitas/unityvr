@@ -7,10 +7,16 @@
       _Amp("Amplitude",Range(0,1)) = 0.5
     }
     SubShader {
+      Tags
+        {
+           "Queue" = "AlphaTest"
+           "RenderType" = "Transparent"
+        }
       Cull Off
       CGPROGRAM
       #pragma surface surf Lambert vertex:vert alpha
     
+
       struct Input {
           float2 uv_MainTex;
           float3 vertColor;
