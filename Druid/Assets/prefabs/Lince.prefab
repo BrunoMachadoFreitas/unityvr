@@ -1061,6 +1061,7 @@ MonoBehaviour:
   movementSpeed: 0.03
   rotationSpeed: 100
   isWalking: 0
+  somInicio: {fileID: 0}
 --- !u!1 &3046341973418520851
 GameObject:
   m_ObjectHideFlags: 0

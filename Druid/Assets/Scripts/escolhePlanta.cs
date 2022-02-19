@@ -34,7 +34,7 @@ public class escolhePlanta : MonoBehaviour
         Vector3 rotationVector = transform.rotation.eulerAngles;
         rotationVector.x = 90;
         placa.GetComponent<cod_plant_contoler>().plantName = plantaEscolhida;
-        Instantiate(placa, new Vector3(primeiroAguentador.transform.position.x, primeiroAguentador.transform.position.y + 1f, primeiroAguentador.transform.position.z) , Quaternion.Euler(rotationVector));
+        Instantiate(placa, new Vector3(primeiroAguentador.transform.position.x, primeiroAguentador.transform.position.y , primeiroAguentador.transform.position.z) , Quaternion.Euler(rotationVector));
        
         placa.gameObject.SetActive(true);
         
